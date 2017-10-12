@@ -1,1 +1,1 @@
-# land-wars-map
+# New Zealand Land Wars

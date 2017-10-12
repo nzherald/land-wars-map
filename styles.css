@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 h2,
@@ -15,7 +16,7 @@ h3 {
 
 p {
   font-size: 0.85em;
-  margin: 10px;
+  /*margin: 10px;*/
   text-align: left;
 }
 
@@ -50,11 +51,10 @@ p {
   right: 0;
   width: 300px;
   height: 600px;
-  /*background: rgba(255,255,255,.5);*/
 }
 
 .timeline {
-
+  z-index: 0;
 }
 
 .timeline:before {
@@ -62,12 +62,13 @@ p {
   position: absolute;
   height: 100%;
   width: 1px;
-  background: #fff;
+  background: rgba(255,255,255,.75);
   left: 50%;
 }
 
 .range {
   height: 150px;
+  position: relative;
 }
 
 .point {
@@ -76,13 +77,39 @@ p {
   background: #fff;
   margin: auto;
   border-radius: 100%;
+  background: white;
 }
 
-.point p {
-  color: #fff;
-  font-family: sans-serif;
+p {
+  color: white;
   font-weight: lighter;
   letter-spacing: 1px;
   font-size: .7rem;
   margin: 0 0 0 18px;
+}
+
+.campaign p {
+  width: 80px;
+}
+
+.campaign-description {
+  width: 90px !important;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: .7rem;
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+
+.campaign {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
 }
