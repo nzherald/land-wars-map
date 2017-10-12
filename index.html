@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Land Wars Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='styles.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div id='map'></div>
+
+    <div class="timeline-container">
+      <div class="timeline">
+
+        <div class="range">
+          <div class="point">
+            <p>1840</p>
+          </div>
+        </div>
+
+        <div class="range">
+          <div class="point">
+            <p>1850</p>
+          </div>
+        </div>
+
+        <div class="range">
+          <div class="point">
+            <p>1860</p>
+          </div>
+        </div>
+
+        <div class="range">
+          <div class="point">
+            <p>1870</p>
+          </div>
+        </div>
+
+        <div class="range">
+          <div class="point">
+            <p>1880</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+
+      mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
+
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/nzherald/cj8m6wwle6m9l2snw7oolbmbz',
+        center: [172.885971, -41.300557],
+        minZoom: 4.8,
+        maxZoom: 16
+      });
+
+    </script>
+
+  </body>
+</html>
