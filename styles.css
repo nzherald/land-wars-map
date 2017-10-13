@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: white;
 }
 
 h2,
@@ -50,7 +51,25 @@ p {
   top: 40px;
   right: 0;
   width: 300px;
-  height: 600px;
+  height: 450px;
+}
+
+.timeline-container h3 {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  margin: 0 0 2rem 0;
+}
+
+.timeline-container span {
+  font-size: .7rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 2.75;
+  background: rgba(255,0,0,.75);
+  padding: .2rem .3rem;
 }
 
 .timeline {
@@ -104,12 +123,44 @@ p {
 }
 
 .campaign {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: red;
   border-radius: 100%;
   position: absolute;
   left: 50%;
-  top: 50%;
   transform: translateX(-50%);
+}
+
+#wairau {
+  top: 30%;
+}
+
+#northern {
+  top: 50%;
+}
+
+#hutt-valley {
+  top: 60%;
+}
+
+#taranaki {
+  top: 0;
+  background: white;
+}
+
+#waikato {
+  top: 30%;
+}
+
+#eastern-bop {
+  top: 50%;
+}
+
+#southern-taranaki {
+  top: 60%;
+}
+
+#te-kooti {
+  top: 80%;
 }

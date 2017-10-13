@@ -12,30 +12,83 @@
     <div id='map'></div>
 
     <div class="timeline-container">
+      <h3><span>Timeline</span> <br>Conflicts &amp; Campaigns</h3>
       <div class="timeline">
 
         <div class="range">
           <div class="point">
             <p>1840</p>
           </div>
-          <div class="campaign">
+
+          <div class="campaign" id="wairau">
+            <p>1843</p>
+            <div class="campaign-description">
+              Wairau
+            </div>
+          </div>
+
+          <div class="campaign" id="northern">
             <p>1845-46</p>
             <div class="campaign-description">
               Northern Wars
             </div>
           </div>
+
+          <div class="campaign" id="hutt-valley">
+            <p>1846</p>
+            <div class="campaign-description">
+              Hutt Valley
+            </div>
+          </div>
+
         </div>
 
         <div class="range">
           <div class="point">
             <p>1850</p>
           </div>
+
         </div>
 
         <div class="range">
           <div class="point">
             <p>1860</p>
           </div>
+
+          <div class="campaign" id="taranaki">
+            <div class="campaign-description">
+              Taranaki
+            </div>
+          </div>
+
+          <div class="campaign" id="waikato">
+            <p>1863-64</p>
+            <div class="campaign-description">
+              Waikato
+            </div>
+          </div>
+
+          <div class="campaign" id="eastern-bop">
+            <p>1865-67</p>
+            <div class="campaign-description">
+              East Coast
+            </div>
+          </div>
+
+          <div class="campaign" id="southern-taranaki">
+            <p>1865-69</p>
+            <div class="campaign-description">
+              South Taranaki
+            </div>
+          </div>
+
+          <div class="campaign" id="te-kooti">
+            <p>1868-72</p>
+            <div class="campaign-description">
+              Te Kooti
+            </div>
+          </div>
+
         </div>
 
         <div class="range">
@@ -44,28 +97,10 @@
           </div>
         </div>
 
-        <div class="range">
-          <div class="point">
-            <p>1880</p>
-          </div>
-        </div>
 
       </div>
     </div>
 
-    <script>
-
-      mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
-
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/nzherald/cj8m6wwle6m9l2snw7oolbmbz',
-        center: [172.885971, -41.300557],
-        minZoom: 4.8,
-        maxZoom: 16
-      });
-
-    </script>
-
+    <script src="main.js"></script>
   </body>
 </html>
