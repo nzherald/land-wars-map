@@ -43,13 +43,40 @@ var map = new mapboxgl.Map({
   maxZoom: 16
 });
 
-var timeline_container = document.getElementById('wrapper');
+map.on('click', function(e) {
 
-var campaigns = data.map((d,i) => {
-  return d;
+  var infobox = document.getElementById('info-box');
+
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['land-wars-dk69ct']
+  });
+
+  if (features.length) {
+      var feature = features[0];
+      infobox.innerHTML = getInfoHTML(feature.properties.location);
+  }
+
+  console.log(features[0].properties.location)
+
 });
 
-function clicked() {
-  console.log(data[0].campaign)
+function getInfoHTML(properties) {
+    var container = document.createElement('div');
+        container.className = 'site';
+
+    var title = document.createElement('h3');
+        title.textContent = properties;
+
+    var description = document.createElement('p');
+        description.textContent = "Placeholder text";
+
+    container.appendChild(title);
+    container.appendChild(description);
+
+    return container.outerHTML;
 
 }
+
+
+// GOOGLE MAPS API KEY
+// AIzaSyC5r8clGDZf-Gaw8uEbNTcKOtKYrYL0ERo
