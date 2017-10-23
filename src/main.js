@@ -1,3 +1,5 @@
+import './styles.scss'
+
 var data = [
   {
     "campaign": "Wairau",
