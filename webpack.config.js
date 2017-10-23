@@ -6,7 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist/new-zealand-wars'),
+    publicPath: '/new-zealand-wars',
     filename: 'app.[hash].js'
   },
     resolve: {
@@ -14,6 +15,7 @@ const config = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, './assets'),
+        openPage: '/new-zealand-wars/'
     },
 module: {
         rules: [

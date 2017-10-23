@@ -31,6 +31,11 @@
     "yml-loader": "^2.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "deploy": "aws --region ap-southeast-2 s3 cp dist/ s3://s3.newsapps.nz/ --acl=public-read --recursive --exclude iframe.html",
+    "dep": "npm-run-all clean build deploy",
+    "clean": "rm -rf dist"
   }
 }
