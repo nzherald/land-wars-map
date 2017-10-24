@@ -51,6 +51,7 @@ var map = new mapboxgl.Map({
 });
 
 map.on('click', function(e) {
+console.log(map.getStyle().layers)
 
   var infobox = document.getElementById('info-box');
 
