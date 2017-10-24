@@ -1,6 +1,7 @@
 import './styles.scss'
 import mapDiv from './map.html'
 import timeline from './timeline.html'
+import _ from 'lodash'
 
 const app = document.getElementById('app')
 app.innerHTML = mapDiv + timeline
@@ -40,6 +41,8 @@ var data = [
   },
 ];
 
+var infobox = document.getElementById('info-box');
+
 mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
 
 var map = new mapboxgl.Map({
@@ -51,8 +54,6 @@ var map = new mapboxgl.Map({
 });
 
 map.on('click', function(e) {
-
-  var infobox = document.getElementById('info-box');
 
   var features = map.queryRenderedFeatures(e.point, {
     layers: ['land-wars-dk69ct']
@@ -84,6 +85,15 @@ function getInfoHTML(properties) {
 
 }
 
+function selectConflict() {
+  const campaigns = document.querySelectorAll('.campaign');
 
-// GOOGLE MAPS API KEY
-// AIzaSyC5r8clGDZf-Gaw8uEbNTcKOtKYrYL0ERo
+  campaigns.forEach(d => {
+    d.addEventListener("click", (c) => {
+      let str = _.startCase(_.camelCase(c.path[1].id));
+      infobox.innerHTML = getInfoHTML(str.replace(/-/g, " "));
+    });
+  })
+}
+
+selectConflict();
