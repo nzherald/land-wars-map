@@ -53,20 +53,14 @@ var map = new mapboxgl.Map({
   maxZoom: 18
 });
 
-map.on('click', function(e) {
-console.log(map.getStyle().layers)
+const SITES_LAYER = 'new-zealand-wars-sites'
 
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['new-zealand-wars-sites']
-  });
+map.on('click', SITES_LAYER, ({features}) => {
 
   if (features.length) {
     var feature = features[0];
     infobox.innerHTML = getInfoHTML(feature.properties.location);
   }
-
-  console.log(features[0].properties.location)
-
 });
 
 function getInfoHTML(properties) {
@@ -86,13 +80,13 @@ function getInfoHTML(properties) {
 
 }
 
-function selectConflict() {
-  const campaigns = $('.campaign');
-  campaigns.on("click", c => {
-    const target = $(c.target)
-    const label = target.data('label') || target.text();
-     infobox.innerHTML = getInfoHTML(label);
-  })
-}
+const campaigns = $('.campaign');
+campaigns.on("click", ({target}) => {
+  const $target = $(target)
+  const label = $target.data('label') || $target.text().trim();
+  infobox.innerHTML = getInfoHTML(label);
+  map.setFilter(SITES_LAYER, map.getFilter(SITES_LAYER) ? null : ['==', 'area', label])
+})
 
-selectConflict();
+
+
