@@ -89,7 +89,8 @@ function getInfoHTML(properties) {
 function selectConflict() {
   const campaigns = $('.campaign');
   campaigns.on("click", c => {
-    const label = $(c.target).text();
+    const target = $(c.target)
+    const label = target.data('label') || target.text();
      infobox.innerHTML = getInfoHTML(label);
   })
 }
