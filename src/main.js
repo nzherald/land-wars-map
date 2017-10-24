@@ -87,13 +87,10 @@ function getInfoHTML(properties) {
 }
 
 function selectConflict() {
-  const campaigns = document.querySelectorAll('.campaign');
-
-  campaigns.forEach(d => {
-    d.addEventListener("click", (c) => {
-      let str = _.startCase(_.camelCase(c.path[1].id));
-      infobox.innerHTML = getInfoHTML(str.replace(/-/g, " "));
-    });
+  const campaigns = $('.campaign');
+  campaigns.on("click", c => {
+    const label = $(c.target).text();
+     infobox.innerHTML = getInfoHTML(label);
   })
 }
 
