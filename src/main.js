@@ -6,40 +6,28 @@ import _ from 'lodash'
 const app = document.getElementById('app')
 app.innerHTML = mapDiv + timeline
 
-var data = [
-  {
-    "campaign": "Wairau",
-    "year": "1843"
+var campaign_coordinates = {
+  'northern-war': {
+    center: [173.934108, -35.423431],
+    zoom: 8.26
   },
-  {
-    "campaign": "Northern Wars",
-    "year": "1845"
+  'Hutt Valley': {
+    center: [174.277684, -41.292357],
+    zoom: 8.90
   },
-  {
-    "campaign": "Hutt Valley",
-    "year": "1846"
+  'Taranaki': {
+    center: [175.100266, -39.298889],
+    zoom: 9.19
   },
-  {
-    "campaign": "Taranaki",
-    "year": "1860"
+  'Waikato': {
+    center: [175.100266, -39.298889],
+    zoom: 9.19
   },
-  {
-    "campaign": "Waikato",
-    "year": "1863-64"
-  },
-  {
-    "campaign": "East Coast",
-    "year": "1865-67"
-  },
-  {
-    "campaign": "South Taranaki",
-    "year": "1865-69"
-  },
-  {
-    "campaign": "Te Kooti",
-    "year": "1868-72"
-  },
-];
+  'East Coast': {
+    center: [175.100266, -39.298889],
+    zoom: 9.19
+  }
+}
 
 var infobox = document.getElementById('info-box');
 
@@ -87,6 +75,3 @@ campaigns.on("click", ({target}) => {
   infobox.innerHTML = getInfoHTML(label);
   map.setFilter(SITES_LAYER, map.getFilter(SITES_LAYER) ? null : ['==', 'area', label])
 })
-
-
-
