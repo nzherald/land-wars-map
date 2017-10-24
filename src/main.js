@@ -1,4 +1,9 @@
 import './styles.scss'
+import mapDiv from './map.html'
+import timeline from './timeline.html'
+
+const app = document.getElementById('app')
+app.innerHTML = mapDiv + timeline
 
 var data = [
   {
@@ -42,7 +47,7 @@ var map = new mapboxgl.Map({
   style: 'mapbox://styles/nzherald/cj8m6wwle6m9l2snw7oolbmbz',
   center: [172.885971, -41.300557],
   minZoom: 4.8,
-  maxZoom: 16
+  maxZoom: 18
 });
 
 map.on('click', function(e) {
@@ -54,8 +59,8 @@ map.on('click', function(e) {
   });
 
   if (features.length) {
-      var feature = features[0];
-      infobox.innerHTML = getInfoHTML(feature.properties.location);
+    var feature = features[0];
+    infobox.innerHTML = getInfoHTML(feature.properties.location);
   }
 
   console.log(features[0].properties.location)
@@ -63,19 +68,19 @@ map.on('click', function(e) {
 });
 
 function getInfoHTML(properties) {
-    var container = document.createElement('div');
-        container.className = 'site';
+  var container = document.createElement('div');
+  container.className = 'site';
 
-    var title = document.createElement('h3');
-        title.textContent = properties;
+  var title = document.createElement('h3');
+  title.textContent = properties;
 
-    var description = document.createElement('p');
-        description.textContent = "Placeholder text";
+  var description = document.createElement('p');
+  description.textContent = "Placeholder text";
 
-    container.appendChild(title);
-    container.appendChild(description);
+  container.appendChild(title);
+  container.appendChild(description);
 
-    return container.outerHTML;
+  return container.outerHTML;
 
 }
 
