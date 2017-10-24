@@ -12,7 +12,7 @@ function EmbedPlugin() {
 EmbedPlugin.prototype.apply = function(compiler) {
   compiler.plugin('done', function(stats)
     {
-      const embed = `$.getScript("/new-zealand-wars/app.${stats.hash}.js");`
+      const embed = `$.getScript("//s3.newsapps.nz/new-zealand-wars/app.${stats.hash}.js");`
       fs.writeFileSync('./dist/new-zealand-wars/embed.js', embed)
     })
 };
@@ -47,6 +47,10 @@ const config = {
       {
         test: /\.scss$/,
         loader: "style-loader!css-loader!postcss-loader!sass-loader"
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,

@@ -55,7 +55,7 @@ map.on('click', function(e) {
   var infobox = document.getElementById('info-box');
 
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['land-wars-dk69ct']
+    layers: ['new-zealand-wars-sites']
   });
 
   if (features.length) {

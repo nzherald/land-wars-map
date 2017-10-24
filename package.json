@@ -19,6 +19,7 @@
     "file-loader": "^1.1.5",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
+    "mapbox-gl": "^0.41.0",
     "markdown-loader": "^2.0.1",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
@@ -35,7 +36,7 @@
     "start": "webpack-dev-server",
     "build": "webpack -p",
     "watch": "webpack --watch",
-    "deploy": "aws --region ap-southeast-2 s3 cp dist/ s3://s3.newsapps.nz/ --acl=public-read --recursive --exclude iframe.html",
+    "deploy": "aws --region ap-southeast-2 s3 cp dist/ s3://s3.newsapps.nz/ --acl=public-read --recursive --cache-control max-age=60,public",
     "dep": "npm-run-all clean build deploy",
     "clean": "rm -rf dist"
   }
