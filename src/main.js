@@ -4,7 +4,7 @@ import timeline from './timeline.html'
 import _ from 'lodash'
 import showdown from 'showdown'
 
-const converter = new showdown.Converter()
+const converter = new showdown.Converter({openLinksInNewWindow: true})
 
 const app = document.getElementById('app')
 app.innerHTML = mapDiv + timeline
