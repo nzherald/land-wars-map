@@ -1,14 +1,81 @@
 - location: Kororāreka
-  date: 30 April 1845
+  date: 11 March 1845
   conflict: Northland
   latitude: -35.2623103
   longitude: 174.1223544
   text: >
-    British ships shelled nearby settlements including Ōtuihu pā, but most Hōne Heke
-    supporters had already left the area.
-- {conflict: Northland, latitude: '-35.4333687', location: Hokianga, longitude: '173.4842261'}
-- {conflict: Northland, latitude: '-35.4521404', location: Ruapekapeka, longitude: '174.1414583'}
-- {conflict: Northland, latitude: '-35.261673', location: Russell, longitude: '174.122219'}
+    Hōne Heke and several hundred warriors attacked Kororāreka. The flag pole was
+    cut down for the fourth time, and the subsequently most of the town was burnt
+    down and the town was evacuated.
+
+    - [View of Kororāreka drawn 10 March 1845](https://nzhistory.govt.nz/media/photo/kororareka-painting-1845)
+- location: Ōtuihu
+  date: 30 April 1845
+  conflict: Northland
+  latitude: -35.317913
+  longitude: 174.126671
+  text: >
+    Additional troops arrived in the Bay of Islands and their first action was to
+    attack and burn down the pā of the neutral chief Pomare at Ōtuihu.
+
+    - [Painting of the attack on Pomare's pā at Ōtuihu](http://natlib.govt.nz/records/22556506)
+- location: Puketutu
+  date: 8 May 1845
+  conflict: Northland
+  latitude: -35.345943
+  longitude: 173.823816
+  text: >
+    The first major engagement of the Northern War was an attack on Hōne Heke's pā at Puketutu.
+    After some fighting outside the pā, but without an direct assault the British withdrew.
+
+    - [Painting of the battle for Puketutu pā](http://natlib.govt.nz/records/22861828)
+
+- location: Kapotai Pā
+  date: 15 May 1845
+  conflict: Northland
+  latitude: -35.334297
+  longitude: 174.223903
+  text: >
+    British troops and Ngāpuhi allies attacked Te Kapotai pā in response the Te Kapotai
+    involvement the atttack on Kororāreka. Te Kapotai withdrew and the pā was plundered
+    and burnt.
+
+    - [Painting of the attack on Te Kapotai Pā](http://mp.natlib.govt.nz/detail/?id=17102&l=en)
+
+- location: Te Ahuahu
+  date: 12 June 1845
+  conflict: Northland
+  latitude: -35.340820
+  longitude: 173.841135
+  text: >
+    The pivotal battle in the Northern war was a battle between Hōne Heke and Ngapūhi forces
+    allied with the British who captured Heke's home pā, Te Ahuahu, while Heke was gathering
+    food. Heke tried to retake the pā, but was seriously injured.
+
+- location: Ohaeawai
+  date: 1 July 1845
+  conflict: Northland
+  latitude: -35.351443
+  longitude: 173.880088
+  text: >
+    The British assembled the largest their largest force, so far, to attack Hōne Heke's ally,
+    Te Ruki Kawiti in a new pā at Ohaeawai. However, the British ignored the advice of their Māori
+    allies suffered many casulties.
+
+    [Plan of Ohaeawai pā](http://mp.natlib.govt.nz/detail/?id=26591&l=en)
+
+- location: Ruapekapeka
+  date: 11 January 1845
+  conflict: Northland
+  latitude: -35.4564228
+  longitude: 174.143225
+  text: >
+    The final battle of the Northen war began with several days of bombardment after which
+    the British captured the pā due to only a few warriors remaining in the pā.
+    Te Ruki Kawiti withdrew and after brief fighting in the bush abandoned the pā.
+
+    - [Visitor guide for Ruapekapeka](http://www.ruapekapeka.co.nz)
+
 - {conflict: Waikato, latitude: '-37.2047402', location: Mauku, longitude: '174.8201434'}
 - {conflict: Waikato, latitude: '-37.3190438', location: Meremere, longitude: '175.0688367'}
 - {conflict: Waikato, latitude: '-37.4305579', location: Rangiriri, longitude: '175.1310991'}

@@ -18,7 +18,7 @@ const MAP_BOUNDS = [[172.4, -41.8], [178.7, -34.0]]
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/nzherald/cj96ajiksp9vb2rt3hx754ij4',
+  style: 'mapbox://styles/nzherald/cj97itj120m932sta477nqeso',
   maxBounds: [[167.3, -41.8],[183.8, -34]],
   minZoom: 4.8,
   maxZoom: 18
@@ -53,8 +53,10 @@ const getInfoHTML = ({location, text, date}) => {
   container.appendChild(description);
 
   return container.outerHTML;
-
 }
+
+window.map = map
+map.on("click", e => console.log(e.latLng.lat, e.latLng.lng))
 
 const campaigns = $('.campaign');
 campaigns.on("click", ({target}) => {
