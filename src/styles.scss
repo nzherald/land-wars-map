@@ -48,7 +48,6 @@ p {
 
 .timeline-container {
   position: absolute;
-  top: 40px;
   right: 0;
   width: 300px;
   height: 450px;
@@ -56,16 +55,17 @@ p {
 
 .timeline-container h3 {
   color: white;
-  font-weight: lighter;
   text-align: center;
   letter-spacing: 1px;
-  font-size: .8rem;
-  margin: 0 0 2rem 0;
+  font-size: 1rem;
+  padding: 2rem 0;
+  background: rgba(0,0,0,.7);
+  margin: 0;
 }
 
 .timeline-container span {
-  font-size: .7rem;
-  font-weight: lighter;
+  font-size: .9rem;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 2.75;
   background: rgba(255,0,0,.75);
@@ -74,6 +74,8 @@ p {
 
 .timeline {
   z-index: 0;
+  height: 500px;
+  background: rgba(0,0,0,.7);
 }
 
 .timeline:before {
@@ -104,22 +106,24 @@ p {
   font-weight: lighter;
   letter-spacing: 1px;
   font-size: .7rem;
+  font-size: 1rem;
   margin: 0 0 0 18px;
 }
 
 .campaign p {
   width: 80px;
+  margin: -2px 0 0 18px;
 }
 
 .campaign-description {
-  width: 90px !important;
+  // width: 90px !important;
   color: white;
   font-weight: lighter;
   letter-spacing: 1px;
-  font-size: .7rem;
+  font-size: 1rem;
   position: absolute;
-  top: 0;
-  left: -100px;
+  top: -4px;
+  left: -105px;
 }
 
 .campaign {
@@ -170,18 +174,44 @@ p {
   position: absolute;
   top: 0;
   z-index: 9999;
-  margin: 2rem;
+  padding: 2.5rem 2rem;
   max-width: 280px;
+  background: rgba(0,0,0,.75);
 }
 
 #info-box h3 {
-  font-size: 1.5rem;
-  font-weight: lighter;
+  font-size: 1.75rem;
+  font-weight: bolder;
   letter-spacing: 1px;
   margin: 0 0 1rem 0;
 }
 
+.site {
+  .when {
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+  .site-description {
+    margin-top: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    color: red;
+    margin-top: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 #info-box p {
-  margin: 0;
-  font-size: .9rem;
+  margin: 0 0 .5rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

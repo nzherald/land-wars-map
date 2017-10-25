@@ -9,28 +9,6 @@ const converter = new showdown.Converter()
 const app = document.getElementById('app')
 app.innerHTML = mapDiv + timeline
 
-var campaign_coordinates = {
-  'northern-war': {
-    center: [173.934108, -35.423431],
-    zoom: 8.26
-  },
-  'Hutt Valley': {
-    center: [174.277684, -41.292357],
-    zoom: 8.90
-  },
-  'Taranaki': {
-    center: [175.100266, -39.298889],
-    zoom: 9.19
-  },
-  'Waikato': {
-    center: [175.100266, -39.298889],
-    zoom: 9.19
-  },
-  'East Coast': {
-    center: [175.100266, -39.298889],
-    zoom: 9.19
-  }
-}
 
 var infobox = document.getElementById('info-box');
 
@@ -67,6 +45,7 @@ const getInfoHTML = ({location, text, date}) => {
   when.textContent = date;
 
   var description = document.createElement('div');
+  description.className = 'site-description'
   description.innerHTML = converter.makeHtml(text || "")
 
   container.appendChild(title);
@@ -76,8 +55,6 @@ const getInfoHTML = ({location, text, date}) => {
   return container.outerHTML;
 
 }
-
-
 
 const campaigns = $('.campaign');
 campaigns.on("click", ({target}) => {
