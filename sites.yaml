@@ -1,53 +1,60 @@
-- {area: Northland, latitude: '-35.5350817', location: Omapere, longitude: '173.3876246'}
-- {area: Northland, latitude: '-35.4333687', location: Hokianga, longitude: '173.4842261'}
-- {area: Northland, latitude: '-35.4521404', location: Ruapekapeka, longitude: '174.1414583'}
-- {area: Northland, latitude: '-35.261673', location: Russell, longitude: '174.122219'}
-- {area: Waikato, latitude: '-37.2047402', location: Mauku, longitude: '174.8201434'}
-- {area: Waikato, latitude: '-37.3190438', location: Meremere, longitude: '175.0688367'}
-- {area: Waikato, latitude: '-37.4305579', location: Rangiriri, longitude: '175.1310991'}
-- {area: Waikato, latitude: '-39.708346', location: Koharoa, longitude: '174.541038'}
-- {area: Waikato, latitude: '-37.9649894', location: 'Waiari Road, Pirongia', longitude: '175.2290535'}
-- {area: Waikato, latitude: '-37.9867689', location: Tapapa, longitude: '175.8422598'}
-- {area: '', latitude: '-38.1368478', location: Rotorua, longitude: '176.2497461'}
-- {area: '', latitude: '-38.233199', location: Kapenga, longitude: '176.221335'}
-- {area: '', latitude: '-38.007228', location: Opotiki, longitude: '177.2871279'}
-- {area: '', latitude: '-37.6877975', location: Tauranga, longitude: '176.1651295'}
-- {area: '', latitude: '-38.6856924', location: Taupo, longitude: '176.0702098'}
-- {area: '', latitude: '-39.272709', location: Tongariro, longitude: '175.5802278'}
-- {area: '', latitude: '-39.1568642', location: Mount Ngauruhoe, longitude: '175.6321486'}
-- {area: '', latitude: '-39.2817207', location: Mount Ruapehu, longitude: '175.5685104'}
-- {area: '', latitude: '-38.754684', location: Urewera, longitude: '177.159278'}
-- {area: '', latitude: '-38.5857162', location: Ngatapa, longitude: '177.793351'}
-- {area: '', latitude: '-37.6908365', location: 'East Cape, Gisborne', longitude: '178.5396131'}
-- {area: '', latitude: '-37.9137623', location: Waiapu, longitude: '178.3406968'}
-- {area: '', latitude: '-38.1290691', location: Tokomaru Bay, longitude: '178.3158337'}
-- {area: '', latitude: '-38.372598', location: Tolaga Bay, longitude: '178.2967888'}
-- {area: '', latitude: '-38.662334', location: Gisbourne, longitude: '178.017649'}
-- {area: '', latitude: '-40.384563', location: Wharerata, longitude: '175.615256'}
-- {area: '', latitude: '-38.832626', location: 'Paparatu Road, Muriwai', longitude: '177.7170342'}
-- {area: '', latitude: '-39.1070513', location: 'Table Cape, Hawke''s Bay, New Zealand',
+- location: Kororāreka
+  date: 30 April 1845
+  conflict: Northland
+  latitude: -35.2623103
+  longitude: 174.1223544
+  text: >
+    British ships shelled nearby settlements including Ōtuihu pā, but most Hōne Heke
+    supporters had already left the area.
+- {conflict: Northland, latitude: '-35.4333687', location: Hokianga, longitude: '173.4842261'}
+- {conflict: Northland, latitude: '-35.4521404', location: Ruapekapeka, longitude: '174.1414583'}
+- {conflict: Northland, latitude: '-35.261673', location: Russell, longitude: '174.122219'}
+- {conflict: Waikato, latitude: '-37.2047402', location: Mauku, longitude: '174.8201434'}
+- {conflict: Waikato, latitude: '-37.3190438', location: Meremere, longitude: '175.0688367'}
+- {conflict: Waikato, latitude: '-37.4305579', location: Rangiriri, longitude: '175.1310991'}
+- {conflict: Waikato, latitude: '-39.708346', location: Koharoa, longitude: '174.541038'}
+- {conflict: Waikato, latitude: '-37.9649894', location: 'Waiari Road, Pirongia', longitude: '175.2290535'}
+- {conflict: Waikato, latitude: '-37.9867689', location: Tapapa, longitude: '175.8422598'}
+- {conflict: '', latitude: '-38.1368478', location: Rotorua, longitude: '176.2497461'}
+- {conflict: '', latitude: '-38.233199', location: Kapenga, longitude: '176.221335'}
+- {conflict: '', latitude: '-38.007228', location: Opotiki, longitude: '177.2871279'}
+- {conflict: '', latitude: '-37.6877975', location: Tauranga, longitude: '176.1651295'}
+- {conflict: '', latitude: '-38.6856924', location: Taupo, longitude: '176.0702098'}
+- {conflict: '', latitude: '-39.272709', location: Tongariro, longitude: '175.5802278'}
+- {conflict: '', latitude: '-39.1568642', location: Mount Ngauruhoe, longitude: '175.6321486'}
+- {conflict: '', latitude: '-39.2817207', location: Mount Ruapehu, longitude: '175.5685104'}
+- {conflict: '', latitude: '-38.754684', location: Urewera, longitude: '177.159278'}
+- {conflict: '', latitude: '-38.5857162', location: Ngatapa, longitude: '177.793351'}
+- {conflict: '', latitude: '-37.6908365', location: 'East Cape, Gisborne', longitude: '178.5396131'}
+- {conflict: '', latitude: '-37.9137623', location: Waiapu, longitude: '178.3406968'}
+- {conflict: '', latitude: '-38.1290691', location: Tokomaru Bay, longitude: '178.3158337'}
+- {conflict: '', latitude: '-38.372598', location: Tolaga Bay, longitude: '178.2967888'}
+- {conflict: '', latitude: '-38.662334', location: Gisbourne, longitude: '178.017649'}
+- {conflict: '', latitude: '-40.384563', location: Wharerata, longitude: '175.615256'}
+- {conflict: '', latitude: '-38.832626', location: 'Paparatu Road, Muriwai', longitude: '177.7170342'}
+- {conflict: '', latitude: '-39.1070513', location: 'Table Cape, Hawke''s Bay, New Zealand',
   longitude: '178.0001082'}
-- {area: '', latitude: '-39.1097879', location: Mohaka, longitude: '177.1722037'}
-- {area: '', latitude: '-39.1089867', location: Hawkes Bay, longitude: '176.7416374'}
-- {area: '', latitude: '-39.4928444', location: Napier, longitude: '176.9120178'}
-- {area: '', latitude: '-39.4209957', location: 'Petane Road, Napier', longitude: '176.8662773'}
-- {area: '', latitude: '-39.5324541', location: 'Omarunui Road, Puketapu', longitude: '176.7987346'}
-- {area: '', latitude: '-39.4770854', location: 'Pipiriki, Manawatu-Wanganui', longitude: '175.0454312'}
-- {area: '', latitude: '-39.9315924', location: 'Moutoa Gardens, Whanganui', longitude: '175.0567922'}
-- {area: '', latitude: '-39.9300887', location: Whanganui, longitude: '175.0478901'}
-- {area: '', latitude: '-39.8059486', location: 'Waitotara, Taranaki', longitude: '174.7356227'}
-- {area: '', latitude: '-39.7547982', location: 'Patea, Taranaki', longitude: '174.4728191'}
-- {area: '', latitude: '-39.533511', location: 'Waingongoro River, Taranaki', longitude: '174.2239154'}
-- {area: '', latitude: '-39.4885206', location: 'Te Ngutu o te Manu, Ahipaipa Road,
+- {conflict: '', latitude: '-39.1097879', location: Mohaka, longitude: '177.1722037'}
+- {conflict: '', latitude: '-39.1089867', location: Hawkes Bay, longitude: '176.7416374'}
+- {conflict: '', latitude: '-39.4928444', location: Napier, longitude: '176.9120178'}
+- {conflict: '', latitude: '-39.4209957', location: 'Petane Road, Napier', longitude: '176.8662773'}
+- {conflict: '', latitude: '-39.5324541', location: 'Omarunui Road, Puketapu', longitude: '176.7987346'}
+- {conflict: '', latitude: '-39.4770854', location: 'Pipiriki, Manawatu-Wanganui', longitude: '175.0454312'}
+- {conflict: '', latitude: '-39.9315924', location: 'Moutoa Gardens, Whanganui', longitude: '175.0567922'}
+- {conflict: '', latitude: '-39.9300887', location: Whanganui, longitude: '175.0478901'}
+- {conflict: '', latitude: '-39.8059486', location: 'Waitotara, Taranaki', longitude: '174.7356227'}
+- {conflict: '', latitude: '-39.7547982', location: 'Patea, Taranaki', longitude: '174.4728191'}
+- {conflict: '', latitude: '-39.533511', location: 'Waingongoro River, Taranaki', longitude: '174.2239154'}
+- {conflict: '', latitude: '-39.4885206', location: 'Te Ngutu o te Manu, Ahipaipa Road,
     Kapuni', longitude: '174.183646'}
-- {area: '', latitude: '-39.2762556', location: 'Cape Egmont Lighthouse, Cape Road,
+- {conflict: '', latitude: '-39.2762556', location: 'Cape Egmont Lighthouse, Cape Road,
     Pungarehu, Taranaki', longitude: '173.7550021'}
-- {area: '', latitude: '-39.0927834', location: 'Waireka Road East, Omata', longitude: '174.0165405'}
-- {area: '', latitude: '-39.0556253', location: New Plymouth, longitude: '174.0752278'}
-- {area: '', latitude: '-39.0130995', location: 'Mahoetahi Road, Sentry Hill', longitude: '174.1962873'}
-- {area: '', latitude: '-39.0202934', location: 'Puketakauere Pa, Pennington Road,
+- {conflict: '', latitude: '-39.0927834', location: 'Waireka Road East, Omata', longitude: '174.0165405'}
+- {conflict: '', latitude: '-39.0556253', location: New Plymouth, longitude: '174.0752278'}
+- {conflict: '', latitude: '-39.0130995', location: 'Mahoetahi Road, Sentry Hill', longitude: '174.1962873'}
+- {conflict: '', latitude: '-39.0202934', location: 'Puketakauere Pa, Pennington Road,
     Brixton', longitude: '174.232199'}
-- {area: '', latitude: '-39.4209957', location: 'Petane Road, Bay View, Napier', longitude: '176.8662773'}
-- {area: '', latitude: '-41.3087068', location: 237 Pouawha Road, longitude: '175.2140895'}
-- {area: '', latitude: '-41.1338998', location: Porirua, longitude: '174.8406006'}
-- {area: '', latitude: '-41.1717127', location: 'Hutt River, Wellington', longitude: '174.9868484'}
+- {conflict: '', latitude: '-39.4209957', location: 'Petane Road, Bay View, Napier', longitude: '176.8662773'}
+- {conflict: '', latitude: '-41.3087068', location: 237 Pouawha Road, longitude: '175.2140895'}
+- {conflict: '', latitude: '-41.1338998', location: Porirua, longitude: '174.8406006'}
+- {conflict: '', latitude: '-41.1717127', location: 'Hutt River, Wellington', longitude: '174.9868484'}
