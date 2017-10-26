@@ -5,25 +5,7 @@ body {
   color: white;
 }
 
-// h2,
-// h3 {
-//   margin: 10px;
-//   font-size: 1.2em;
-// }
-//
-// h3 {
-//   font-size: 1em;
-// }
-//
-// p {
-//   // font-size: 0.85em;
-//   /*margin: 10px;*/
-//   text-align: left;
-// }
 
-/**
-* Create a position for the map
-* on the page */
 #map {
   position: absolute;
   top: 0;
@@ -35,10 +17,37 @@ body {
   padding-top: 0 !important;
 }
 
-/**
-* Set rules for how the map overlays
-* (info box and legend) will be displayed
-* on the page. */
+
+@mixin mobile-lg {
+  @media (min-width: 370px) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media (min-width: 550px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 750px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin desktop-hd {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
 .map-overlay {
   position: absolute;
   bottom: 0;
@@ -64,68 +73,105 @@ body {
 }
 
 .overflow {
-  width: 300px;
-  height: 100vh;
-  overflow-y: hidden;
-  position: absolute;
-  background: rgba(0,0,0,.8);
+  @include tablet {
+    width: 300px;
+    height: 100vh;
+    overflow-y: hidden;
+    position: absolute;
+    background: rgba(0,0,0,.8);
+  }
 }
 
 .sidebar {
-  width: 300px;
-  height: 94%;
-  position: absolute;
-  top:0;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  @include tablet {
+    width: 300px;
+    height: 94%;
+    position: absolute;
+    top:0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 .timeline-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 300px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  img {
+    position: absolute;
+    background: rgba(255,0,0,.75);
+    padding: .25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    @include tablet {
+      display: none;
+    }
+  }
+  @include tablet {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 280px;
+    background: none;
+  }
 }
 
 .timeline-wrapper {
   position: relative;
-  width: 280px;
-  height: 410px;
-  transition: height 1.5s;
+  width: 100%;
+  height: 75px;
   overflow: hidden;
+  @include tablet {
+    width: 280px;
+    height: 410px;
+    transition: height 1.5s;
+    overflow: hidden;
+  }
 }
 
 .timeline-container h3 {
   color: white;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 1.5rem;
-  padding: 2rem 0;
+  font-size: 1.25rem;
+  padding: 1rem 0 2rem 0;
   margin: 0;
+  @include tablet {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+  }
 }
 
 .timeline-container span {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 2.75;
   padding: .2rem 1rem;
   background: rgba(255,0,0,.75);
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 .timeline {
   z-index: 0;
-  height: 500px;
+  height: 300px;
+  @include tablet {
+    height: 500px;
+  }
 }
 
 .timeline:before {
   content: '';
   position: absolute;
-  height: 100%;
+  height: 280px;
   width: 1px;
   background: rgba(255,255,255,.75);
   left: 50%;
+  @include tablet {
+    height: 100%;
+  }
 }
 
 .range {
@@ -217,17 +263,37 @@ body {
 }
 
 .infobox-container {
-  position: relative;
-  width: 300px;
+  position: fixed;
+  bottom: 0;
+  padding: 1.5rem 2rem 4rem 2rem;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  @include tablet {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    padding: 2rem 2rem 0 4rem;
+    width: 280px;
+    background: none;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255,0,0,.75);
+    padding: .25rem;
+    @include tablet {
+      display: none;
+    }
+  }
+  @include tablet {
+    position: relative;
+    width: 300px;
+  }
 }
 
 
 #info-box {
-  position: absolute;
-  top: 0;
-  z-index: 9999;
-  padding: 2.5rem 2rem 6rem 2.5rem;
-  width: 300px;
   .site {
     .when {
       font-size: 1.1rem;
@@ -241,7 +307,10 @@ body {
     font-size: 1.75rem;
     font-weight: bolder;
     letter-spacing: 1px;
-    margin: 0 0 2rem 0;
+    margin: 0 0 .5rem 0;
+    @include tablet {
+      margin: 0 0 2rem 0;
+    }
   }
   p {
     margin: 0 0 .5rem 0;
@@ -249,11 +318,15 @@ body {
     line-height: 1.5;
   }
   ul {
+    display: none;
     list-style: none;
     padding: 0;
     margin: 1rem 0 0 0;
     list-style: circle;
     list-style-position: inside;
+    @include tablet {
+      display: block;
+    }
     li {
       margin-bottom: 0;
     }
