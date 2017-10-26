@@ -84,13 +84,13 @@ body {
   left: 0;
   top: 0;
   width: 300px;
-  height: 450px;
+  height: 360px;
 }
 
 .timeline-wrapper {
   position: relative;
   width: 300px;
-  height: 580px;
+  height: 500px;
 }
 
 .timeline-container h3 {
@@ -126,7 +126,7 @@ body {
 }
 
 .range {
-  height: 150px;
+  height: 180px;
   position: relative;
 }
 
@@ -137,6 +137,10 @@ body {
   margin: auto;
   border-radius: 100%;
   background: white;
+}
+
+.range-end {
+  height: 0;
 }
 
 .range p {
