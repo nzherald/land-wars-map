@@ -1,6 +1,6 @@
 - location: Kororāreka
   date: 11 March 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.2623103
   longitude: 174.1223544
   text: >
@@ -11,54 +11,54 @@
     - [View of Kororāreka drawn 10 March 1845](https://nzhistory.govt.nz/media/photo/kororareka-painting-1845)
 - location: Ōtuihu
   date: 30 April 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.317913
   longitude: 174.126671
   text: >
     Additional troops arrived in the Bay of Islands and their first action was to
     attack and burn down the pā of the neutral chief Pomare at Ōtuihu.
 
-    - [Painting of the attack on Pomare's pā at Ōtuihu](http://natlib.govt.nz/records/22556506)
+    - [Painting of the attack on Pomare&#8217;s pā at Ōtuihu](http://natlib.govt.nz/records/22556506)
 - location: Puketutu
   date: 8 May 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.345943
   longitude: 173.823816
   text: >
-    The first major engagement of the Northern War was an attack on Hōne Heke's pā at Puketutu.
+    The first major engagement of the Northern War was an attack on Hōne Heke&#8217;s pā at Puketutu.
     After some fighting outside the pā, but without an direct assault the British withdrew.
 
     - [Painting of the battle for Puketutu pā](http://natlib.govt.nz/records/22861828)
 
 - location: Kapotai Pā
   date: 15 May 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.334297
   longitude: 174.223903
   text: >
     British troops and Ngāpuhi allies attacked Te Kapotai pā in response the Te Kapotai
-    involvement the atttack on Kororāreka. Te Kapotai withdrew and the pā was plundered
+    involvement the attack on Kororāreka. Te Kapotai withdrew and the pā was plundered
     and burnt.
 
     - [Painting of the attack on Te Kapotai Pā](http://mp.natlib.govt.nz/detail/?id=17102&l=en)
 
 - location: Te Ahuahu
   date: 12 June 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.340820
   longitude: 173.841135
   text: >
     The pivotal battle in the Northern war was a battle between Hōne Heke and Ngapūhi forces
-    allied with the British who captured Heke's home pā, Te Ahuahu, while Heke was gathering
+    allied with the British who captured Heke&#8217;s home pā, Te Ahuahu, while Heke was gathering
     food. Heke tried to retake the pā, but was seriously injured.
 
 - location: Ohaeawai
   date: 1 July 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.351443
   longitude: 173.880088
   text: >
-    The British assembled the largest their largest force, so far, to attack Hōne Heke's ally,
+    The British assembled the largest their largest force, so far, to attack Hōne Heke&#8217;s ally,
     Te Ruki Kawiti in a new pā at Ohaeawai. However, the British ignored the advice of their Māori
     allies suffered many casulties.
 
@@ -66,63 +66,63 @@
 
 - location: Ruapekapeka
   date: 11 January 1845
-  conflict: Northland
+  campaign: northern
   latitude: -35.4564228
   longitude: 174.143225
   text: >
-    The final battle of the Northen war began with several days of bombardment after which
+    The final battle of the Northern war began with several days of bombardment after which
     the British captured the pā due to only a few warriors remaining in the pā.
     Te Ruki Kawiti withdrew and after brief fighting in the bush abandoned the pā.
 
     - [Visitor guide for Ruapekapeka](http://www.ruapekapeka.co.nz)
 
 
-- {conflict: Waikato, latitude: '-37.2047402', location: Mauku, longitude: '174.8201434'}
-- {conflict: Waikato, latitude: '-37.3190438', location: Meremere, longitude: '175.0688367'}
-- {conflict: Waikato, latitude: '-37.4305579', location: Rangiriri, longitude: '175.1310991'}
-- {conflict: Waikato, latitude: '-39.708346', location: Koharoa, longitude: '174.541038'}
-- {conflict: Waikato, latitude: '-37.9649894', location: 'Waiari Road, Pirongia', longitude: '175.2290535'}
-- {conflict: Waikato, latitude: '-37.9867689', location: Tapapa, longitude: '175.8422598'}
-- {conflict: '', latitude: '-38.1368478', location: Rotorua, longitude: '176.2497461'}
-- {conflict: '', latitude: '-38.233199', location: Kapenga, longitude: '176.221335'}
-- {conflict: '', latitude: '-38.007228', location: Opotiki, longitude: '177.2871279'}
-- {conflict: '', latitude: '-37.6877975', location: Tauranga, longitude: '176.1651295'}
-- {conflict: '', latitude: '-38.6856924', location: Taupo, longitude: '176.0702098'}
-- {conflict: '', latitude: '-39.272709', location: Tongariro, longitude: '175.5802278'}
-- {conflict: '', latitude: '-39.1568642', location: Mount Ngauruhoe, longitude: '175.6321486'}
-- {conflict: '', latitude: '-39.2817207', location: Mount Ruapehu, longitude: '175.5685104'}
-- {conflict: '', latitude: '-38.754684', location: Urewera, longitude: '177.159278'}
-- {conflict: '', latitude: '-38.5857162', location: Ngatapa, longitude: '177.793351'}
-- {conflict: '', latitude: '-37.6908365', location: 'East Cape, Gisborne', longitude: '178.5396131'}
-- {conflict: '', latitude: '-37.9137623', location: Waiapu, longitude: '178.3406968'}
-- {conflict: '', latitude: '-38.1290691', location: Tokomaru Bay, longitude: '178.3158337'}
-- {conflict: '', latitude: '-38.372598', location: Tolaga Bay, longitude: '178.2967888'}
-- {conflict: '', latitude: '-38.662334', location: Gisbourne, longitude: '178.017649'}
-- {conflict: '', latitude: '-40.384563', location: Wharerata, longitude: '175.615256'}
-- {conflict: '', latitude: '-38.832626', location: 'Paparatu Road, Muriwai', longitude: '177.7170342'}
-- {conflict: '', latitude: '-39.1070513', location: 'Table Cape, Hawke''s Bay, New Zealand',
+- {campaign: Waikato, latitude: '-37.2047402', location: Mauku, longitude: '174.8201434'}
+- {campaign: Waikato, latitude: '-37.3190438', location: Meremere, longitude: '175.0688367'}
+- {campaign: Waikato, latitude: '-37.4305579', location: Rangiriri, longitude: '175.1310991'}
+- {campaign: Waikato, latitude: '-39.708346', location: Koharoa, longitude: '174.541038'}
+- {campaign: Waikato, latitude: '-37.9649894', location: 'Waiari Road, Pirongia', longitude: '175.2290535'}
+- {campaign: Waikato, latitude: '-37.9867689', location: Tapapa, longitude: '175.8422598'}
+- {campaign: '', latitude: '-38.1368478', location: Rotorua, longitude: '176.2497461'}
+- {campaign: '', latitude: '-38.233199', location: Kapenga, longitude: '176.221335'}
+- {campaign: '', latitude: '-38.007228', location: Opotiki, longitude: '177.2871279'}
+- {campaign: '', latitude: '-37.6877975', location: Tauranga, longitude: '176.1651295'}
+- {campaign: '', latitude: '-38.6856924', location: Taupo, longitude: '176.0702098'}
+- {campaign: '', latitude: '-39.272709', location: Tongariro, longitude: '175.5802278'}
+- {campaign: '', latitude: '-39.1568642', location: Mount Ngauruhoe, longitude: '175.6321486'}
+- {campaign: '', latitude: '-39.2817207', location: Mount Ruapehu, longitude: '175.5685104'}
+- {campaign: '', latitude: '-38.754684', location: Urewera, longitude: '177.159278'}
+- {campaign: '', latitude: '-38.5857162', location: Ngatapa, longitude: '177.793351'}
+- {campaign: '', latitude: '-37.6908365', location: 'East Cape, Gisborne', longitude: '178.5396131'}
+- {campaign: '', latitude: '-37.9137623', location: Waiapu, longitude: '178.3406968'}
+- {campaign: '', latitude: '-38.1290691', location: Tokomaru Bay, longitude: '178.3158337'}
+- {campaign: '', latitude: '-38.372598', location: Tolaga Bay, longitude: '178.2967888'}
+- {campaign: '', latitude: '-38.662334', location: Gisbourne, longitude: '178.017649'}
+- {campaign: '', latitude: '-40.384563', location: Wharerata, longitude: '175.615256'}
+- {campaign: '', latitude: '-38.832626', location: 'Paparatu Road, Muriwai', longitude: '177.7170342'}
+- {campaign: '', latitude: '-39.1070513', location: 'Table Cape, Hawke''s Bay, New Zealand',
   longitude: '178.0001082'}
-- {conflict: '', latitude: '-39.1097879', location: Mohaka, longitude: '177.1722037'}
-- {conflict: '', latitude: '-39.1089867', location: Hawkes Bay, longitude: '176.7416374'}
-- {conflict: '', latitude: '-39.4928444', location: Napier, longitude: '176.9120178'}
-- {conflict: '', latitude: '-39.4209957', location: 'Petane Road, Napier', longitude: '176.8662773'}
-- {conflict: '', latitude: '-39.5324541', location: 'Omarunui Road, Puketapu', longitude: '176.7987346'}
-- {conflict: '', latitude: '-39.4770854', location: 'Pipiriki, Manawatu-Wanganui', longitude: '175.0454312'}
-- {conflict: '', latitude: '-39.9315924', location: 'Moutoa Gardens, Whanganui', longitude: '175.0567922'}
-- {conflict: '', latitude: '-39.9300887', location: Whanganui, longitude: '175.0478901'}
-- {conflict: '', latitude: '-39.8059486', location: 'Waitotara, Taranaki', longitude: '174.7356227'}
-- {conflict: '', latitude: '-39.7547982', location: 'Patea, Taranaki', longitude: '174.4728191'}
-- {conflict: '', latitude: '-39.533511', location: 'Waingongoro River, Taranaki', longitude: '174.2239154'}
-- {conflict: '', latitude: '-39.4885206', location: 'Te Ngutu o te Manu, Ahipaipa Road,
+- {campaign: '', latitude: '-39.1097879', location: Mohaka, longitude: '177.1722037'}
+- {campaign: '', latitude: '-39.1089867', location: Hawkes Bay, longitude: '176.7416374'}
+- {campaign: '', latitude: '-39.4928444', location: Napier, longitude: '176.9120178'}
+- {campaign: '', latitude: '-39.4209957', location: 'Petane Road, Napier', longitude: '176.8662773'}
+- {campaign: '', latitude: '-39.5324541', location: 'Omarunui Road, Puketapu', longitude: '176.7987346'}
+- {campaign: '', latitude: '-39.4770854', location: 'Pipiriki, Manawatu-Wanganui', longitude: '175.0454312'}
+- {campaign: '', latitude: '-39.9315924', location: 'Moutoa Gardens, Whanganui', longitude: '175.0567922'}
+- {campaign: '', latitude: '-39.9300887', location: Whanganui, longitude: '175.0478901'}
+- {campaign: '', latitude: '-39.8059486', location: 'Waitotara, Taranaki', longitude: '174.7356227'}
+- {campaign: '', latitude: '-39.7547982', location: 'Patea, Taranaki', longitude: '174.4728191'}
+- {campaign: '', latitude: '-39.533511', location: 'Waingongoro River, Taranaki', longitude: '174.2239154'}
+- {campaign: '', latitude: '-39.4885206', location: 'Te Ngutu o te Manu, Ahipaipa Road,
     Kapuni', longitude: '174.183646'}
-- {conflict: '', latitude: '-39.2762556', location: 'Cape Egmont Lighthouse, Cape Road,
+- {campaign: '', latitude: '-39.2762556', location: 'Cape Egmont Lighthouse, Cape Road,
     Pungarehu, Taranaki', longitude: '173.7550021'}
-- {conflict: '', latitude: '-39.0927834', location: 'Waireka Road East, Omata', longitude: '174.0165405'}
-- {conflict: '', latitude: '-39.0556253', location: New Plymouth, longitude: '174.0752278'}
-- {conflict: '', latitude: '-39.0130995', location: 'Mahoetahi Road, Sentry Hill', longitude: '174.1962873'}
-- {conflict: '', latitude: '-39.0202934', location: 'Puketakauere Pa, Pennington Road,
+- {campaign: '', latitude: '-39.0927834', location: 'Waireka Road East, Omata', longitude: '174.0165405'}
+- {campaign: '', latitude: '-39.0556253', location: New Plymouth, longitude: '174.0752278'}
+- {campaign: '', latitude: '-39.0130995', location: 'Mahoetahi Road, Sentry Hill', longitude: '174.1962873'}
+- {campaign: '', latitude: '-39.0202934', location: 'Puketakauere Pa, Pennington Road,
     Brixton', longitude: '174.232199'}
-- {conflict: '', latitude: '-39.4209957', location: 'Petane Road, Bay View, Napier', longitude: '176.8662773'}
-- {conflict: '', latitude: '-41.3087068', location: 237 Pouawha Road, longitude: '175.2140895'}
-- {conflict: '', latitude: '-41.1338998', location: Porirua, longitude: '174.8406006'}
-- {conflict: '', latitude: '-41.1717127', location: 'Hutt River, Wellington', longitude: '174.9868484'}
+- {campaign: '', latitude: '-39.4209957', location: 'Petane Road, Bay View, Napier', longitude: '176.8662773'}
+- {campaign: '', latitude: '-41.3087068', location: 237 Pouawha Road, longitude: '175.2140895'}
+- {campaign: '', latitude: '-41.1338998', location: Porirua, longitude: '174.8406006'}
+- {campaign: '', latitude: '-41.1717127', location: 'Hutt River, Wellington', longitude: '174.9868484'}

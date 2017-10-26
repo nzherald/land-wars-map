@@ -15,14 +15,14 @@ sites = yaml.load(open('sites.yaml',encoding='utf-8').read())
 points = FeatureCollection([Feature(geometry=Point(
     (float(s["longitude"]),
      float(s["latitude"]))),
-        properties=dict(conflict=s['conflict'],
+        properties=dict(campaign=s['campaign'],
                         location=s['location'],
                         date=s.get('date'),
                         text=s.get('text')
                         )) for s in sites])
 
 service = Uploader(access_token=config['mapbox']['access-token'])
-upl = service.upload(BytesIO(dumps(points).encode('utf-8')), 'nzherald.new-zealand-wars-sites-v3',
-                     name="New Zealand Wars Sites v3")
+upl = service.upload(BytesIO(dumps(points).encode('utf-8')), 'nzherald.new-zealand-wars-sites-v5',
+                     name="New Zealand Wars Sites v5")
 
 print(upl.json())
