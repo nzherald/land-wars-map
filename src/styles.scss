@@ -67,14 +67,15 @@ body {
   width: 300px;
   height: 100vh;
   overflow-y: hidden;
+  position: absolute;
+  background: rgba(0,0,0,.8);
 }
 
 .sidebar {
   width: 300px;
-  height: 100%;
+  height: 94%;
   position: absolute;
   top:0;
-  background: rgba(0,0,0,.8);
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -84,13 +85,15 @@ body {
   left: 0;
   top: 0;
   width: 300px;
-  height: 310px;
+  height: 280px;
 }
 
 .timeline-wrapper {
   position: relative;
   width: 280px;
-  height: 470px;
+  height: 410px;
+  transition: height 1.5s;
+  overflow: hidden;
 }
 
 .timeline-container h3 {
@@ -126,7 +129,7 @@ body {
 }
 
 .range {
-  height: 180px;
+  height: 160px;
   position: relative;
 }
 
@@ -178,20 +181,19 @@ body {
 }
 
 #northern {
-  top: 20%;
+  top: 0%;
 }
 
 #whanganui {
-  top: 40%;
+  top: 30%;
 }
 
 #hutt-valley {
-  top: 30%;
+  top: 20%;
 }
 
 #taranaki {
   top: 0;
-  background: white;
 }
 
 #waikato {
@@ -219,32 +221,42 @@ body {
   width: 300px;
 }
 
+
 #info-box {
   position: absolute;
   top: 0;
   z-index: 9999;
   padding: 2.5rem 2rem 6rem 2.5rem;
   width: 300px;
-}
-
-#info-box h3 {
-  font-size: 1.75rem;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  margin: 0 0 1rem 0;
-}
-
-.site {
-  .when {
-    font-size: 1.1rem;
-    font-weight: bolder;
+  .site {
+    .when {
+      font-size: 1.1rem;
+      font-weight: bolder;
+    }
+    .site-description {
+      margin-top: 1rem;
+    }
   }
-  .site-description {
-    margin-top: 1rem;
+  h1, h3 {
+    font-size: 1.75rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin: 0 0 2rem 0;
+  }
+  p {
+    margin: 0 0 .5rem 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
   ul {
     list-style: none;
     padding: 0;
+    margin: 1rem 0 0 0;
+    list-style: circle;
+    list-style-position: inside;
+    li {
+      margin-bottom: 0;
+    }
   }
   a {
     color: red;
@@ -252,14 +264,9 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bolder;
+    line-height: 1;
     &:hover {
       text-decoration: underline;
     }
   }
-}
-
-#info-box p {
-  margin: 0 0 .5rem 0;
-  font-size: 1.2rem;
-  line-height: 1.5;
 }
