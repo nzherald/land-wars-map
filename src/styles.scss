@@ -5,21 +5,21 @@ body {
   color: white;
 }
 
-h2,
-h3 {
-  margin: 10px;
-  font-size: 1.2em;
-}
-
-h3 {
-  font-size: 1em;
-}
-
-p {
-  font-size: 0.85em;
-  /*margin: 10px;*/
-  text-align: left;
-}
+// h2,
+// h3 {
+//   margin: 10px;
+//   font-size: 1.2em;
+// }
+//
+// h3 {
+//   font-size: 1em;
+// }
+//
+// p {
+//   // font-size: 0.85em;
+//   /*margin: 10px;*/
+//   text-align: left;
+// }
 
 /**
 * Create a position for the map
@@ -46,36 +46,49 @@ p {
   border-radius: 3px;
 }
 
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  background: rgba(0,0,0,.75);
+}
+
 .timeline-container {
   position: absolute;
-  right: 0;
+  left: 0;
+  top: 0;
   width: 300px;
   height: 450px;
+}
+
+.timeline-wrapper {
+  position: relative;
+  width: 300px;
+  height: 580px;
 }
 
 .timeline-container h3 {
   color: white;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 2rem 0;
-  background: rgba(0,0,0,.7);
   margin: 0;
 }
 
 .timeline-container span {
-  font-size: .9rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 2.75;
+  padding: .2rem 1rem;
   background: rgba(255,0,0,.75);
-  padding: .2rem .3rem;
 }
 
 .timeline {
   z-index: 0;
   height: 500px;
-  background: rgba(0,0,0,.7);
 }
 
 .timeline:before {
@@ -101,7 +114,7 @@ p {
   background: white;
 }
 
-p {
+.range p {
   color: white;
   letter-spacing: 1px;
   font-size: .7rem;
@@ -172,13 +185,17 @@ p {
   top: 80%;
 }
 
+.infobox-container {
+  position: relative;
+  width: 300px;
+}
+
 #info-box {
   position: absolute;
   top: 0;
   z-index: 9999;
   padding: 2.5rem 2rem;
-  max-width: 280px;
-  background: rgba(0,0,0,.75);
+  width: 300px;
 }
 
 #info-box h3 {
