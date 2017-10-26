@@ -18,7 +18,7 @@ wellington:
   text: >
     # Wellington: 1846
 
-    Agreements between 'The New Zealand Company' and Wellington Māori over
+    Agreements between the _New Zealand Company_ and Wellington Māori over
     land purchases and settlements made in 1839 were characterised by confusion
     and uncertainty. Ngati Toa chief Te Rangihaeata supported Māori opposed to 
     settlement and by 1846 the tensions resulted in conflict.
@@ -26,3 +26,34 @@ wellington:
     - [Te Ara: Wellington and Whanganui wars](https://teara.govt.nz/en/new-zealand-wars/page-3)
 
     - [NZ History: War in Wellington](https://nzhistory.govt.nz/war/wellington-war)
+
+
+whanganui:
+  bbox: [[174.99, -39.96],[175.15, -39.911]]
+  text: >
+    # Whanganui 1847
+
+    Whanganui was also a _New Zealand Company_ settlement where confusion and
+    uncertainty over land purchases contributed to tension between settler and
+    Māori. The conflict in Whanganui also incorporated longstanding rivalries
+    between upriver and lower-river Māori.
+
+    - [Te Ara: Wellington and Whanganui wars](https://teara.govt.nz/en/new-zealand-wars/page-3)
+
+    - [NZ History: War in Whanganui](https://nzhistory.govt.nz/war/wanganui-war)
+
+taranaki:
+  bbox: [[173.69, -39.18],[174.28, -38.977]]
+  text: >
+    # Taranaki 1860&mdash;64
+    
+    Settlers in New Plymouth wanted access to more Māori land and while a few Māori chiefs
+    were open land sales most were not. A block of land was sold in 1860 and non-violent
+    attempts by other Māori to prevent the land being surveyed precipitated the conflict. By
+    1865 virtually all of Taranaki had been confiscated.
+
+    - [NZ History: War in Taranaki 1860-63](https://nzhistory.govt.nz/war/taranaki-wars)
+
+    - [Te Ara: North Taranaki war](http://www.TeAra.govt.nz/en/new-zealand-wars/page-4)
+
+

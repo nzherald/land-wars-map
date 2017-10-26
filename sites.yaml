@@ -92,7 +92,7 @@
       
       - [Painting of Boulcott&apos;s stockade in the Hutt Valley](https://nzhistory.govt.nz/media/photo/painting-boulcotts-stockade-hutt-valley)
 
-  - location: The arrest of Te Rauparaha
+  - location: Taupō pā
     date: 23 July 1846
     latitude: -41.082337
     longitude: 174.863295
@@ -110,3 +110,133 @@
       now known as Battle Hill. After a small engagements and shelling Te Rangihaeata
       retreated during the night, and eventually settled in Horowhenua.
 
+- campaign: whanganui
+  sites:
+  - location: Gilfillan farm 
+    date: 18 April 1847
+    latitude: -39.942178
+    longitude: 175.146826
+    text: >
+      A group of upriver Māori attacked an isolated farm near Whanganui killing four members
+      of the family. With the assistance of lower-river Māori the perpetrators wear caught and
+      all but one were hung on April 26.
+  - location: Rutland stockade
+    date: 19 May 1847
+    latitude: -39.931155
+    longitude: 175.053892 
+    text: >
+      700 Ngāti Hāua-te-rangi (upriver) warriors under the command of Te Mamaku attacked
+      Whanganui. Settlers and troops took refuge in Rutland stockade.
+
+      - [Rutland Stockade sketch](https://teara.govt.nz/en/artwork/36907/rutland-stockade-whanganui)
+
+  - location: St John&apos;s wood
+    date: 20 July 1847
+    latitude: -39.926591
+    longitude: 175.034756
+    text: >
+      800 British soldiers arrived in June and the siege ended after inconclusive
+      fighting at St John&apos;s wood.
+
+      - [Fighting at St John&apos;s Wood, Whanganui, 1847](https://nzhistory.govt.nz/media/photo/fighting-st-johns-wood-wanganui)
+
+
+- campaign: taranaki
+  sites:
+  - location: Te Kōhia pā
+    date: 17 March 1860
+    latitude: -39.001275
+    longitude: 174.218170
+    text: >
+      British troops had occupied a disputed settlement block and Te Ātiawa had
+      constructed a fortification at Te Kōhia overlooking the block. On 17 March
+      the British attacked the pā and it was abandoned.
+
+  - location: Waireka
+    date: 28 March 1860
+    latitude: -39.087658
+    longitude: 174.012543
+    text: >
+      The battle of Waireka appears to have been a confused operation involving troops,
+      militia, and sailors from HMS Niger attempting to rescue trapped settlers
+      resulting in New Zealand&apos; first Victoria Cross and a historically disputed number of Māori fatalities.
+
+      - [Sketch of battle of Waireka](https://nzhistory.govt.nz/media/photo/sketch-battle-waireka)
+
+  - location: Puketakauere
+    date: 27 June 1980
+    latitude: -39.016515
+    longitude: 174.230259
+    text: >
+      Te Ātiawa chief Hapurona had strengthened defenses at Puketakauere pā overlooking
+      the British soliders in Camp Waitara and Ngāti Maniapoto warriors had arrived from Waikato.
+      British soldiers attacked the pā and suffered a major defeat.
+
+  - location: Ōrongomaihāngi pā
+    date: 11 October 1860
+    latitude: -39.16098
+    longitude: 173.85006
+    text: >
+      Ōrongomaihāngi pā was shelled as part of a series of operations south of New Plymouth
+      designed to prevent supporters of Te Ātiawa arriving from the south. The pā was abandoned
+      after a days shelling.
+
+  - location: Māhoetahi
+    date: 6 Nov 1860
+    latitude: -39.020784
+    longitude: 174.194155
+    text: >
+      A force of about 150 Ngāti Hauā warriors from Waikato were fortifying and old pā site
+      when they were surprised by 1000 newly arrived British soldiers who coincidentally
+      planned to occupy the same site. The Ngāti Hauā force was quickly defeated.
+
+  - location: Te Ārei
+    date: 19 March 1861
+    latitude: -39.065714
+    longitude: 174.263077
+    text: >
+      Over almost three months British troops advanced on Te Ārei by constructing a series of
+      trenches and redoubts. The last shot was fired on 19 March and a truce was negotiated.
+
+  - location: Tātaraimaka
+    date: 12 March 1863
+    latitude: -39.147968
+    longitude: 173.906021
+    text: >
+      Soldiers evicted Māori were evicted from land they were occupying. The five tribes, 
+      Te Ātiawa, Taranaki, Ngāti Ruanui, Ngāti Rauru and Whanganui,
+      occupying the land viewed this as an act of war.
+
+
+  - location: Ōākura
+    date: 4 May 1863
+    latitude: -39.119939
+    longitude: 173.94619
+    text: >
+      After British troops were killed in an ambush Governor Grey blamed the
+      Kīngitanga and claimed they were planning an assault on Auckland.
+
+  - location: Katikara River
+    date: 4 June 1863
+    latitude: -39.13548
+    longitude: 173.88447
+    text: >
+      870 troops led by a new British commander defeated a small Māori force
+      in a pā above the Katikara River
+
+  - location: Allen&apos;s Hill
+    date: 2 October 1863
+    latitude: -39.096372
+    longitude: 174.012316
+    text: >
+      A skirmish resulted in two soldiers being awarded Victoria Crosses and
+      a Portuguese born settler was awarded the New Zealand Cross.
+
+  - location: Te Ahuahu
+    date: 6 April 1864
+    latitude: -39.152561
+    longitude: 173.921385
+    text: >
+      After being driven out of the area by troops and militia in March 1864 followers
+      of the Pai Mārire ambushed a British patrol. This action was used to attack more
+      followers.
