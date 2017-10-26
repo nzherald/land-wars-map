@@ -1,8 +1,8 @@
 import './styles.scss'
 import mapDiv from './map.html'
 import timeline from './timeline.html'
-import _ from 'lodash'
-import showdown from 'showdown'
+
+import campaignText from './campaigns.yaml'
 
 const converter = new showdown.Converter()
 
@@ -13,13 +13,15 @@ app.innerHTML = mapDiv + timeline
 var infobox = document.getElementById('info-box');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
-const SITES_LAYER = 'new-zealand-wars-sites-v3'
+const SITES_LAYER = 'new-zealand-wars-sites-v4'
 const MAP_BOUNDS = [[172.4, -41.8], [178.7, -34.0]]
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/nzherald/cj97shlgw0vzt2sth19hf1c1y',
+  style: 'mapbox://styles/nzherald/cj97v74930xzb2rpedntcd720',
   maxBounds: [[167.3, -41.8],[183.8, -34]],
+  center: [176.386231, -38.106439],
+  zoom: 5.8,
   minZoom: 4.8,
   maxZoom: 18
 });
@@ -56,18 +58,19 @@ const getInfoHTML = ({location, text, date}) => {
 }
 
 window.map = map
-map.on("click", e => console.log(e.latLng.lat, e.latLng.lng))
+map.on("click", e => console.log(e.lngLat.lng, e.lngLat.lat))
 
 const campaigns = $('.campaign');
-campaigns.on("click", ({target}) => {
-  const $target = $(target)
-  const label = $target.data('label') || $target.text().trim();
-  infobox.innerHTML = `<div class="site"><h3>${label}</h3></div>`
+campaigns.on("click", ({currentTarget}) => {
+  const campaignId = $(currentTarget).attr("id")
+  const campaign = campaignText[campaignId]
+  if (!campaign) { return }
+  infobox.innerHTML = converter.makeHtml(campaign.text)
   if (map.getFilter(SITES_LAYER)) {
     map.setFilter(SITES_LAYER, null)
     map.fitBounds(MAP_BOUNDS)
   } else {
-    map.setFilter(SITES_LAYER, ['==', 'conflict', $target.data("conflict")])
-    map.fitBounds($target.data("bbox"))
+    map.setFilter(SITES_LAYER, ['==', 'campaign', campaignId])
+    map.fitBounds(campaign.bbox)
   }
 })
