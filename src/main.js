@@ -4,7 +4,7 @@ import timeline from './timeline.html'
 
 import campaignText from './campaigns.yaml'
 
-const converter = new showdown.Converter()
+const converter = new showdown.Converter({openLinksInNewWindow: true})
 
 const app = document.getElementById('app')
 app.innerHTML = mapDiv + timeline
@@ -13,12 +13,12 @@ app.innerHTML = mapDiv + timeline
 var infobox = document.getElementById('info-box');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
-const SITES_LAYER = 'new-zealand-wars-sites-v5'
+const SITES_LAYER = 'new-zealand-wars-sites-v8'
 const MAP_BOUNDS = [[172.4, -41.8], [178.7, -34.0]]
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/nzherald/cj97wkbcx0yxz2rtik22bhzkg',
+  style: 'mapbox://styles/nzherald/cj992hajo22462slr60ij4qyo',
   maxBounds: [[167.3, -41.8],[183.8, -34]],
   center: [176.386231, -38.106439],
   zoom: 5.8,
@@ -66,7 +66,8 @@ campaigns.on("click", ({currentTarget}) => {
   const campaign = campaignText[campaignId]
   if (!campaign) { return }
   infobox.innerHTML = converter.makeHtml(campaign.text)
-  if (map.getFilter(SITES_LAYER)) {
+  const filter = map.getFilter(SITES_LAYER)
+  if (filter && filter[2] == campaignId) {
     map.setFilter(SITES_LAYER, null)
     map.fitBounds(MAP_BOUNDS)
   } else {
