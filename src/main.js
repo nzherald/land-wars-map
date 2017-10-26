@@ -18,7 +18,7 @@ const MAP_BOUNDS = [[172.4, -41.8], [178.7, -34.0]]
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/nzherald/cj97vm5hx0y9p2rqd5q3ray9j',
+  style: 'mapbox://styles/nzherald/cj97wkbcx0yxz2rtik22bhzkg',
   maxBounds: [[167.3, -41.8],[183.8, -34]],
   center: [176.386231, -38.106439],
   zoom: 5.8,
