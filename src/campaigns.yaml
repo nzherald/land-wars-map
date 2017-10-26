@@ -1,16 +1,28 @@
 northern:
   bbox: [[173.395,-35.607],[174.669, -35.025]]
   text: >
-    # Northern War: 1863-64
+    # Northern War: 1845&mdash;46
     
     The Northern war arose out of tension between the government and
     Ngapuhi that resulted from the different understandings of the Crown&apos;s
     sovereignty and ‘te tino rangatiratanga’.
 
-    - [Te Ara](https://teara.govt.nz/en/new-zealand-wars/page-2)
+    - [Te Ara: Northern war](https://teara.govt.nz/en/new-zealand-wars/page-2)
 
-    - [NZ History](https://nzhistory.govt.nz/war/northern-war)
+    - [NZ History: The Northern War](https://nzhistory.govt.nz/war/northern-war)
 
     - [Ruapekapeka](http://www.ruapekapeka.co.nz)
 
+wellington:
+  bbox: [[174.794, -41.251],[174.982, -41.050]]
+  text: >
+    # Wellington: 1846
 
+    Agreements between 'The New Zealand Company' and Wellington Māori over
+    land purchases and settlements made in 1839 were characterised by confusion
+    and uncertainty. Ngati Toa chief Te Rangihaeata supported Māori opposed to 
+    settlement and by 1846 the tensions resulted in conflict.
+
+    - [Te Ara: Wellington and Whanganui wars](https://teara.govt.nz/en/new-zealand-wars/page-3)
+
+    - [NZ History: War in Wellington](https://nzhistory.govt.nz/war/wellington-war)
