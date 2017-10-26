@@ -84,13 +84,13 @@ body {
   left: 0;
   top: 0;
   width: 300px;
-  height: 360px;
+  height: 310px;
 }
 
 .timeline-wrapper {
   position: relative;
-  width: 300px;
-  height: 500px;
+  width: 280px;
+  height: 470px;
 }
 
 .timeline-container h3 {
@@ -178,15 +178,15 @@ body {
 }
 
 #northern {
-  top: 50%;
+  top: 20%;
 }
 
 #whanganui {
-  top: 70%;
+  top: 40%;
 }
 
 #hutt-valley {
-  top: 60%;
+  top: 30%;
 }
 
 #taranaki {
@@ -195,23 +195,23 @@ body {
 }
 
 #waikato {
-  top: 30%;
+  top: 20%;
 }
 
 #eastern-bop {
-  top: 50%;
-}
-
-#bop {
   top: 40%;
 }
 
+#bop {
+  top: 30%;
+}
+
 #southern-taranaki {
-  top: 60%;
+  top: 50%;
 }
 
 #te-kooti {
-  top: 80%;
+  top: 70%;
 }
 
 .infobox-container {
