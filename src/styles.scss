@@ -31,6 +31,10 @@ body {
   width: 100%;
 }
 
+.wrapper {
+  padding-top: 0 !important;
+}
+
 /**
 * Set rules for how the map overlays
 * (info box and legend) will be displayed
@@ -46,12 +50,33 @@ body {
   border-radius: 3px;
 }
 
-.sidebar {
+::-webkit-scrollbar {
+    width: .7rem;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #777;
+  outline: 1px solid slategrey;
+}
+
+.overflow {
   width: 300px;
   height: 100vh;
+  overflow-y: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100%;
   position: absolute;
   top:0;
-  background: rgba(0,0,0,.75);
+  background: rgba(0,0,0,.8);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .timeline-container {
@@ -194,7 +219,7 @@ body {
   position: absolute;
   top: 0;
   z-index: 9999;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem 6rem 2.5rem;
   width: 300px;
 }
 
