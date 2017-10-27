@@ -23,7 +23,7 @@ points = FeatureCollection([Feature(geometry=Point(
                         )) for c in sites for i,s in enumerate(c['sites'])])
 
 service = Uploader(access_token=config['mapbox']['access-token'])
-upl = service.upload(BytesIO(dumps(points).encode('utf-8')), 'nzherald.new-zealand-wars-sites-v11',
-                     name="New Zealand Wars Sites v11")
+upl = service.upload(BytesIO(dumps(points).encode('utf-8')), 'nzherald.new-zealand-wars-sites-v12',
+                     name="New Zealand Wars Sites v12")
 
 print(upl.json())

@@ -74,7 +74,7 @@ waikato:
     - [Te Ara: Waikato war](https://teara.govt.nz/en/new-zealand-wars/page-5)
 
 tauranga:
-  bbox: []
+  bbox: [[176, -37.94],[176.77, -37.65]]
   text: >
     # Tauranga 1864
 
@@ -84,7 +84,7 @@ tauranga:
     returned home.
 
 southern-taranaki:
-  bbox: []
+  bbox: [[174, -39.94],[174.88, -39.47]]
   text: >
     # Southern Taranaki 1865&mdash;69
 
