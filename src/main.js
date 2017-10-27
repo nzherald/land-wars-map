@@ -33,6 +33,7 @@ map.on('click', SITES_LAYER, ({features}) => {
     var feature = features[0];
     infobox.innerHTML = getInfoHTML(feature.properties);
     $('.infobox-container').removeClass('close-infobox');
+    $('.instructions').addClass('inactive');
   }
 
 });
@@ -70,6 +71,7 @@ campaigns.on("click", ({currentTarget}) => {
   infobox.innerHTML = converter.makeHtml(campaign.text)
   const filter = map.getFilter(SITES_LAYER)
   $('.infobox-container').removeClass('close-infobox');
+  $('.instructions').addClass('inactive');
   $('.timeline-wrapper').removeClass('open-menu');
   $('.icon-img').removeClass('rotate-icon');
   campaigns.removeClass('selected');
@@ -94,4 +96,5 @@ menu_arrow.on("click", () => {
 
 close_icon.on("click", () => {
   $('.infobox-container').addClass('close-infobox');
+  $('.instructions').removeClass('inactive');
 });
