@@ -61,8 +61,8 @@ waikato:
   text: >
     # Waikato 1863&mdash;64
 
-    The Kīngitanga movement in the Waikato was the centre of Māori resistance to land sales.
-    The government regarded the movement as the source of conflict in other parts of
+    The Kīngitanga movement in the Waikato was at the centre of Māori resistance to land sales.
+    The government regarded the movement as the source of conflicts in other parts of
     New Zealand.
 
     A large number of British soldiers were assembled and a military road constructed
@@ -79,7 +79,21 @@ tauranga:
     # Tauranga 1864
 
     In January 1864 British troops landed in Tauranga with orders to stop
-    Ngāi Te Rangi sending reinforcements and supplies to the Kīngitanga force
-    in Waikato. In response, Tauranga Māori who had been fighting in Waikato 
+    Ngāi Te Rangi sending reinforcements and supplies to the Kīngitanga forces
+    . In response, Tauranga Māori fighting in Waikato 
     returned home.
+
+southern-taranaki:
+  bbox: []
+  text: >
+    # Southern Taranaki 1865&mdash;69
+
+    In early 1865, British troops in Waikato were sent to Whanganui and dispatched north 
+    to engage with Southern Taranaki Māori.
+
+    Later in 1868, Ngāti Ruanui leader Riwha Tītokowaru fought another war to try and stop
+    confiscation of Māori land.
+
+    - [NZ History:  Tītokowaru&apos;s war](https://nzhistory.govt.nz/war/titokowarus-war)
+
 

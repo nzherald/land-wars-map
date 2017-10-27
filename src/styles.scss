@@ -193,14 +193,14 @@
     z-index: 0;
     height: 300px;
     @include tablet {
-      height: 500px;
+      height: 400px;
     }
   }
 
   .timeline:before {
 
     @include tablet {
-      height: 275px;
+      height: 245px;
       content: '';
       position: absolute;
       width: 1px;
