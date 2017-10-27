@@ -72,14 +72,14 @@ campaigns.on("click", ({currentTarget}) => {
   $('.infobox-container').removeClass('close-infobox');
   $('.timeline-wrapper').removeClass('open-menu');
   $('.icon-img').removeClass('rotate-icon');
+  campaigns.removeClass('selected');
   if (filter && filter[2] == campaignId) {
     map.setFilter(SITES_LAYER, null)
     map.fitBounds(MAP_BOUNDS)
-    $(currentTarget).addClass('selected');
   } else {
     map.setFilter(SITES_LAYER, ['==', 'campaign', campaignId])
     map.fitBounds(campaign.bbox)
-    $(currentTarget).removeClass('selected');
+    $(currentTarget).addClass('selected');
   }
 })
 
