@@ -7,342 +7,378 @@ body {
 #app {
   color: white;
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.wrapper {
-  padding-top: 0 !important;
-}
-
-
-@mixin mobile-lg {
-  @media (min-width: 370px) {
-    @content;
-  }
-}
-
-@mixin phablet {
-  @media (min-width: 550px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: 750px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: 1100px) {
-    @content;
-  }
-}
-
-@mixin desktop-hd {
-  @media (min-width: 1400px) {
-    @content;
-  }
-}
-
-.map-overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.8);
-  margin-right: 20px;
-  font-family: Arial, sans-serif;
-  overflow: auto;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar {
-    width: .7rem;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #777;
-  outline: 1px solid slategrey;
-}
-
-.overflow {
-  @include tablet {
-    width: 300px;
-    height: 100vh;
-    overflow-y: hidden;
+  #map {
     position: absolute;
     top: 0;
-    background: rgba(0,0,0,.8);
+    bottom: 0;
+    width: 100%;
   }
-}
 
-.sidebar {
-  @include tablet {
-    width: 300px;
-    height: 94%;
-    position: absolute;
-    top:0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  .wrapper {
+    padding-top: 0 !important;
   }
-}
 
-.timeline-container {
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,.8);
-  img {
-    position: absolute;
-    background: rgba(255,0,0,.75);
-    padding: .25rem;
-    top: 50%;
-    transform: translateY(-50%);
-    @include tablet {
-      display: none;
+
+  @mixin mobile-lg {
+    @media (min-width: 370px) {
+      @content;
     }
   }
-  @include tablet {
+
+  @mixin phablet {
+    @media (min-width: 550px) {
+      @content;
+    }
+  }
+
+  @mixin tablet {
+    @media (min-width: 750px) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+    @media (min-width: 1100px) {
+      @content;
+    }
+  }
+
+  @mixin desktop-hd {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+
+  .map-overlay {
     position: absolute;
-    left: 0;
-    width: 300px;
-    height: 280px;
-    background: none;
-  }
-}
-
-.timeline-wrapper {
-  position: relative;
-  width: 100%;
-  height: 75px;
-  overflow: hidden;
-  @include tablet {
-    width: 280px;
-    height: 410px;
-    transition: height 1.5s;
-    overflow: hidden;
-  }
-}
-
-.timeline-container h3 {
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 1.25rem;
-  padding: 1rem 0 2rem 0;
-  margin: 0;
-  @include tablet {
-    padding: 2rem 0;
-    font-size: 1.5rem;
-  }
-}
-
-.timeline-container span {
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 2.75;
-  padding: .2rem 1rem;
-  background: rgba(255,0,0,.75);
-  @include tablet {
-    font-size: 1.5rem;
-  }
-}
-
-.timeline {
-  z-index: 0;
-  height: 300px;
-  @include tablet {
-    height: 500px;
-  }
-}
-
-.timeline:before {
-  content: '';
-  position: absolute;
-  height: 280px;
-  width: 1px;
-  background: rgba(255,255,255,.75);
-  left: 50%;
-  @include tablet {
-    height: 100%;
-  }
-}
-
-.range {
-  height: 160px;
-  position: relative;
-}
-
-.point {
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  margin: auto;
-  border-radius: 100%;
-  background: white;
-}
-
-.range-end {
-  height: 0;
-}
-
-.range p {
-  color: white;
-  letter-spacing: 1px;
-  font-size: .7rem;
-  font-size: 1rem;
-  margin: 0 0 0 18px;
-}
-
-.campaign p {
-  width: 80px;
-  margin: -2px 0 0 18px;
-}
-
-.campaign-description {
-  // width: 90px !important;
-  color: white;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  position: absolute;
-  top: -4px;
-  left: -105px;
-}
-
-.campaign {
-  width: 8px;
-  height: 8px;
-  background: red;
-  border-radius: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-}
-
-#northern {
-  top: 0%;
-}
-
-#whanganui {
-  top: 30%;
-}
-
-#wellington {
-  top: 20%;
-}
-
-#taranaki {
-  top: 0;
-}
-
-#waikato {
-  top: 20%;
-}
-
-#eastern-bop {
-  top: 40%;
-}
-
-#bop {
-  top: 30%;
-}
-
-#southern-taranaki {
-  top: 50%;
-}
-
-#te-kooti {
-  top: 70%;
-}
-
-.infobox-container {
-  position: absolute;
-  bottom: 0;
-  padding: 1.5rem 2rem 4rem 2rem;
-  width: 100%;
-  background: rgba(0,0,0,.8);
-  @include tablet {
-    position: absolute;
-    top: 0;
-    z-index: 9999;
-    padding: 2rem 2rem 0 4rem;
-    width: 280px;
-    background: none;
-  }
-  img {
-    position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    background: rgba(255,0,0,.75);
-    padding: .25rem;
+    background: rgba(255, 255, 255, 0.8);
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar {
+    width: .7rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #777;
+    outline: 1px solid slategrey;
+  }
+
+  .overflow {
     @include tablet {
-      display: none;
+      width: 300px;
+      height: 100vh;
+      overflow-y: hidden;
+      position: absolute;
+      top: 0;
+      background: rgba(0,0,0,.8);
     }
   }
-  @include tablet {
+
+  .sidebar {
+    @include tablet {
+      width: 300px;
+      height: 94%;
+      position: absolute;
+      top:0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+
+  .timeline-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    img {
+      position: absolute;
+      background: rgba(255,0,0,.75);
+      padding: .25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      @include tablet {
+        display: none;
+      }
+    }
+    @include tablet {
+      position: absolute;
+      left: 0;
+      width: 300px;
+      height: 280px;
+      background: none;
+    }
+  }
+
+  .timeline-wrapper {
     position: relative;
-    width: 300px;
-  }
-}
-
-
-#info-box {
-  .site {
-    .when {
-      font-size: 1.1rem;
-      font-weight: bolder;
-    }
-    .site-description {
-      margin-top: 1rem;
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    @include tablet {
+      width: 280px;
+      height: 410px;
+      transition: height 1.5s;
+      overflow: hidden;
     }
   }
-  h1, h3 {
-    font-size: 1.75rem;
-    font-weight: bolder;
+
+  .timeline-container h3 {
+    color: white;
+    text-align: center;
     letter-spacing: 1px;
-    margin: 0 0 .5rem 0;
+    font-size: 1.25rem;
+    padding: 1rem 0 2rem 0;
+    margin: 0;
     @include tablet {
-      margin: 0 0 2rem 0;
+      padding: 2rem 0;
+      font-size: 1.5rem;
     }
   }
-  p {
-    margin: 0 0 .5rem 0;
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-  ul {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    list-style: circle;
-    list-style-position: inside;
+
+  .timeline-container span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.75;
+    padding: .2rem 1rem;
+    background: rgba(255,0,0,.75);
     @include tablet {
-      display: block;
-    }
-    li {
-      margin-bottom: 0;
+      font-size: 1.5rem;
     }
   }
-  a {
-    color: red;
-    margin-top: .5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    line-height: 1;
-    &:hover {
-      text-decoration: underline;
+
+  .timeline {
+    z-index: 0;
+    height: 300px;
+    @include tablet {
+      height: 500px;
     }
   }
-}
+
+  .timeline:before {
+    content: '';
+    position: absolute;
+    height: 280px;
+    width: 1px;
+    background: rgba(255,255,255,.75);
+    left: 50%;
+    @include tablet {
+      height: 100%;
+    }
+  }
+
+  .range {
+    height: 160px;
+    position: relative;
+  }
+
+  .point {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin: auto;
+    border-radius: 100%;
+    background: white;
+  }
+
+  .range-end {
+    height: 0;
+  }
+
+  .range p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: .7rem;
+    font-size: 1rem;
+    margin: 0 0 0 18px;
+  }
+
+  .campaign p {
+    width: 80px;
+    margin: -2px 0 0 18px;
+  }
+
+  .campaign-description {
+    // width: 90px !important;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    position: absolute;
+    top: -4px;
+    left: -105px;
+  }
+
+  .campaign {
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  #northern {
+    top: 0%;
+  }
+
+  #whanganui {
+    top: 30%;
+  }
+
+  #wellington {
+    top: 20%;
+  }
+
+  #taranaki {
+    top: 0;
+  }
+
+  #waikato {
+    top: 20%;
+  }
+
+  #eastern-bop {
+    top: 40%;
+  }
+
+  #bop {
+    top: 30%;
+  }
+
+  #southern-taranaki {
+    top: 50%;
+  }
+
+  #te-kooti {
+    top: 70%;
+  }
+
+  .infobox-container {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 2rem 4rem 2rem;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    @include tablet {
+      position: absolute;
+      top: 0;
+      z-index: 9999;
+      padding: 3.5rem 2rem 0 4rem;
+      width: 280px;
+      background: none;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(255,0,0,.75);
+      padding: .25rem;
+      @include tablet {
+        display: none;
+      }
+    }
+    @include tablet {
+      position: relative;
+      width: 300px;
+    }
+  }
+
+
+  #info-box {
+
+    .site {
+      .when {
+        font-size: 1.1rem;
+        font-weight: bolder;
+      }
+      .site-description {
+        margin-top: 1rem;
+      }
+    }
+    h1, h3 {
+      font-size: 1.75rem;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      margin: 0 0 .5rem 0;
+      @include tablet {
+        margin: 0 0 2rem 0;
+      }
+    }
+    p {
+      margin: 0 0 .5rem 0;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    ul {
+      // display: none;
+      list-style: none;
+      padding: 0;
+      margin: .5rem 0 0 0;
+      list-style: none;
+      // list-style-position: inside;
+      @include tablet {
+        margin: 1rem 0 0 0;
+      }
+      li {
+        margin-bottom: 0;
+        line-height: 1;
+      }
+    }
+    a {
+      color: red;
+      margin-top: .5rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      line-height: 1;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  .instructions {
+    width: 100%;
+    opacity: .8;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0,0,0,.9);
+    @include tablet {
+      margin: 1rem auto 0 auto;
+      width: 240px;
+      border: 1px solid #333;
+    }
+    img {
+      margin: 0 0 .75rem .75rem;
+      width: 20px;
+      height: 35px;
+      @include tablet {
+        padding: .75rem .5rem .75rem 1rem;
+        width: 43px;
+        height: 56px;
+      }
+    }
+    p {
+      font-size: 1.35rem;
+      padding: 1rem;
+      margin: 0;
+      @include tablet {
+        padding: 1.25rem;
+      }
+    }
+
+  }
 }
