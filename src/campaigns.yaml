@@ -56,4 +56,21 @@ taranaki:
 
     - [Te Ara: North Taranaki war](http://www.TeAra.govt.nz/en/new-zealand-wars/page-4)
 
+waikato:
+  bbox: [[175.042, -38.07], [175.568, -37.233]]
+  text: >
+    # Waikato 1863&mdash;64
+
+    The Kīngitanga movement in the Waikato was the core of Māori resistance to selling land 
+    and regarded as the source of the conflict the government was having other parts of
+    New Zealand.
+
+    A large number of British soldiers had been assembled and a military road was constructed
+    south from Auckland. An ultimatum was issued to Waikato Māori on 11 July 1863, but the invasion
+    commenced the next day - before the ultimatum could even reach its audience.
+
+    - [NZ History: 'War in Waikato'](https://nzhistory.govt.nz/war/war-in-waikato)
+
+    - [Te Ara: Waikato war](https://teara.govt.nz/en/new-zealand-wars/page-5)
+
 

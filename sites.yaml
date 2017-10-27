@@ -45,8 +45,8 @@
     latitude: -35.340820
     longitude: 173.841135
     text: >
-      The pivotal battle in the Northern war was a battle between Hōne Heke and Ngapūhi forces
-      allied with the British who captured Heke&apos;s home pā, Te Ahuahu, while Heke was gathering
+      A key incident in the Northern war did not involve any British troops. Ngapūhi forces
+      allied with the British captured Heke&apos;s home pā, Te Ahuahu, while Heke was gathering
       food. Heke tried to retake the pā, but was seriously injured.
 
   - location: Ohaeawai
@@ -54,9 +54,9 @@
     latitude: -35.351443
     longitude: 173.880088
     text: >
-      The British assembled the largest their largest force, so far, to attack Hōne Heke&apos;s ally,
+      The British assembled their largest force, so far, to attack Hōne Heke&apos;s ally,
       Te Ruki Kawiti in a new pā at Ohaeawai. However, the British ignored the advice of their Māori
-      allies suffered many casulties.
+      allies and suffered many casulties.
 
       [Plan of Ohaeawai pā](http://mp.natlib.govt.nz/detail/?id=26591&l=en)
 
@@ -130,7 +130,7 @@
 
       - [Rutland Stockade sketch](https://teara.govt.nz/en/artwork/36907/rutland-stockade-whanganui)
 
-  - location: St John&apos;s wood
+  - location: "St John's wood"
     date: 20 July 1847
     latitude: -39.926591
     longitude: 175.034756
@@ -168,7 +168,7 @@
     latitude: -39.016515
     longitude: 174.230259
     text: >
-      Te Ātiawa chief Hapurona had strengthened defenses at Puketakauere pā overlooking
+      Te Ātiawa chief Hapurona had strengthened defences at Puketakauere pā overlooking
       the British soliders in Camp Waitara and Ngāti Maniapoto warriors had arrived from Waikato.
       British soldiers attacked the pā and suffered a major defeat.
 
@@ -179,16 +179,16 @@
     text: >
       Ōrongomaihāngi pā was shelled as part of a series of operations south of New Plymouth
       designed to prevent supporters of Te Ātiawa arriving from the south. The pā was abandoned
-      after a days shelling.
+      after a days&apos; shelling.
 
   - location: Māhoetahi
     date: 6 Nov 1860
     latitude: -39.020784
     longitude: 174.194155
     text: >
-      A force of about 150 Ngāti Hauā warriors from Waikato were fortifying and old pā site
+      A force of about 150 Ngati Maniapoto & Ngāti Hauā warriors from Waikato were fortifying an old pā site
       when they were surprised by 1000 newly arrived British soldiers who coincidentally
-      planned to occupy the same site. The Ngāti Hauā force was quickly defeated.
+      planned to occupy the same site. The Māori force was quickly defeated.
 
   - location: Te Ārei
     date: 19 March 1861
@@ -240,3 +240,68 @@
       After being driven out of the area by troops and militia in March 1864 followers
       of the Pai Mārire ambushed a British patrol. This action was used to attack more
       followers.
+
+
+- campaign: waikato
+  sites:
+  - location: Meremere
+    date: 31 October 1863
+    latitude: -37.320325
+    longitude: 175.071892
+    text: >
+      Expecting an invasion a force of about 1000 Māori assembled at Meremere. On
+      31 October 1863 the British used ships to transport troops past Meremere and the
+      outflanked defenders abandoned the pā.
+        
+      - [Meremere from Whangamarino Redoubt](https://nzhistory.govt.nz/media/photo/mere-mere-whangamarino-redoubt)
+
+  
+  - location: Rangiriri
+    date: 20 November 1863
+    latitude: -37.4311
+    longitude: 175.13517
+    text: >
+      A total British force of 1400 attacked the pā at Rangiriri. The pā&apos;s 500 defenders
+      repelled several attacks. The next day a white flag was raised. There was some confusion
+      as to its meaning, but the result was the defenders&apos; surrender.
+
+      - [Naval attack at Rangiriri](https://nzhistory.govt.nz/media/photo/naval-attack-rangiriri)
+
+
+
+  - location: Pāterangi
+    date: 11 February 1864
+    latitude: -37.96698
+    longitude: 175.22
+    text: >
+      British troops had been within sight of the well-fortified Pāterangi pā from 29 January
+      1864, but the refrained from a direct assault. On 11 February, a small Māori force attempted to
+      force an assault by attacking the British camp.
+
+      - [Paterangi 1864](https://nzhistory.govt.nz/media/photo/paterangi-1864)
+
+  - location: Rangiaowhia
+    date: 20 February 1864
+    latitude: -38.01456
+    longitude: 175.3764
+    text: >
+      Aided by Māori allies British troops bypassed Pāterangi and attacked the
+      almost undefended Rangiaowhia settlement. Houses were set fire and the 
+      occupants shot as they tried to escape.
+
+      - [The fight at Rangiaowhia](https://nzhistory.govt.nz/media/photo/fight-rangiaohia-mchales-body)
+
+
+  - location: Ōrākau
+    date: 2 April 1864
+    latitude: -38.04961
+    longitude: 175.3879
+    text: >
+      Surrounded by an overwhelming force in an incomplete pā Māori defenders were given the
+      opportunity to surrender and refused. In a surprise move the defenders broke through
+      the cordon. In the ensuring pursuit many Māori were killed including wounded women who were 
+      bayoneted.
+
+      - ['Ōrākau pā'](https://nzhistory.govt.nz/media/photo/orakau-pah)
+
+
