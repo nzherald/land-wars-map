@@ -69,6 +69,7 @@ campaigns.on("click", ({currentTarget}) => {
   if (!campaign) { return }
   infobox.innerHTML = converter.makeHtml(campaign.text)
   const filter = map.getFilter(SITES_LAYER)
+  $('.infobox-container').removeClass('close-infobox');
   $('.timeline-wrapper').removeClass('open-menu');
   $('.icon-img').removeClass('rotate-icon');
   if (filter && filter[2] == campaignId) {
