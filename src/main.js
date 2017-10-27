@@ -38,6 +38,17 @@ map.on('click', SITES_LAYER, ({features}) => {
 
 });
 
+
+
+map.on('mouseenter', SITES_LAYER, (e) => {
+  map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', SITES_LAYER, () => {
+  map.getCanvas().style.cursor = '';
+});
+
 const getInfoHTML = ({location, text, date}) => {
   var container = document.createElement('div');
   container.className = 'site';
