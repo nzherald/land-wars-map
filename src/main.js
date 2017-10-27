@@ -14,15 +14,15 @@ var infobox = document.getElementById('info-box');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
 const SITES_LAYER = 'new-zealand-wars-sites-v10'
-const MAP_BOUNDS = [[172.4, -41.8], [178.7, -34.0]]
+const MAP_BOUNDS = [[170, -44], [180, -31.0]]
 
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/nzherald/cj99b8b372b5w2sthr1j9otpg',
   maxBounds: [[167.3, -41.8],[183.8, -34]],
   center: [176.386231, -38.106439],
-  zoom: 5.8,
-  minZoom: 4.8,
+  zoom: 5,
+  minZoom: 3,
   maxZoom: 18
 });
 
@@ -67,19 +67,17 @@ const campaigns = $('.campaign');
 campaigns.on("click", ({currentTarget}) => {
   const campaignId = $(currentTarget).attr("id")
   const campaign = campaignText[campaignId]
+  const selected = $(currentTarget).hasClass('selected')
+  campaigns.removeClass('selected');
   if (!campaign) { return }
   infobox.innerHTML = converter.makeHtml(campaign.text)
-  const filter = map.getFilter(SITES_LAYER)
   $('.infobox-container').removeClass('close-infobox');
   $('.instructions').addClass('inactive');
   $('.timeline-wrapper').removeClass('open-menu');
   $('.icon-img').removeClass('rotate-icon');
-  campaigns.removeClass('selected');
-  if (filter && filter[2] == campaignId) {
-    map.setFilter(SITES_LAYER, null)
+  if (selected) {
     map.fitBounds(MAP_BOUNDS)
   } else {
-    map.setFilter(SITES_LAYER, ['==', 'campaign', campaignId])
     map.fitBounds(campaign.bbox)
     $(currentTarget).addClass('selected');
   }

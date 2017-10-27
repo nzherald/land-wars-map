@@ -16,14 +16,14 @@ points = FeatureCollection([Feature(geometry=Point(
     (float(s["longitude"]),
      float(s["latitude"]))),
         properties=dict(campaign=c['campaign'],
-                        location=s['location'],
-                        idx=i+1,
+                        location="%i) %s" % (i+1, s['location']),
+                        idx=str(i+1),
                         date=s['date'],
                         text=s['text']
                         )) for c in sites for i,s in enumerate(c['sites'])])
 
 service = Uploader(access_token=config['mapbox']['access-token'])
-upl = service.upload(BytesIO(dumps(points).encode('utf-8')), 'nzherald.new-zealand-wars-sites-v10',
-                     name="New Zealand Wars Sites v10")
+upl = service.upload(BytesIO(dumps(points).encode('utf-8')), 'nzherald.new-zealand-wars-sites-v11',
+                     name="New Zealand Wars Sites v11")
 
 print(upl.json())
