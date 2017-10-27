@@ -6,6 +6,7 @@ body {
 
 #app {
   color: white;
+}
 
 #map {
   position: absolute;
@@ -346,23 +347,38 @@ body {
       text-decoration: underline;
     }
   }
+}
 
 
 .instructions {
-  width: 240px;
-  margin: 1rem auto 0 auto;
-  opacity: .7;
-  border: 1px solid #333;
+  width: 100%;
+  opacity: .8;
+  margin: 0;
   display: flex;
+  justify-content: space-around;
+  background: rgba(0,0,0,.9);
+  @include tablet {
+    margin: 1rem auto 0 auto;
+    width: 240px;
+    border: 1px solid #333;
+  }
   img {
-    padding: .75rem .5rem .75rem 1rem;
-    width: 43px;
-    height: 56px;
+    margin: 0 0 .75rem .75rem;
+    width: 20px;
+    height: 35px;
+    @include tablet {
+      padding: .75rem .5rem .75rem 1rem;
+      width: 43px;
+      height: 56px;
+    }
   }
   p {
     font-size: 1.35rem;
-    padding: 1.25rem;
+    padding: 1rem;
     margin: 0;
+    @include tablet {
+      padding: 1.25rem;
+    }
   }
 
 }
