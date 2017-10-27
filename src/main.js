@@ -32,7 +32,9 @@ map.on('click', SITES_LAYER, ({features}) => {
   if (features.length) {
     var feature = features[0];
     infobox.innerHTML = getInfoHTML(feature.properties);
+    $('.infobox-container').removeClass('close-infobox');
   }
+
 });
 
 const getInfoHTML = ({location, text, date}) => {
@@ -67,6 +69,8 @@ campaigns.on("click", ({currentTarget}) => {
   if (!campaign) { return }
   infobox.innerHTML = converter.makeHtml(campaign.text)
   const filter = map.getFilter(SITES_LAYER)
+  $('.timeline-wrapper').removeClass('open-menu');
+  $('.icon-img').removeClass('rotate-icon');
   if (filter && filter[2] == campaignId) {
     map.setFilter(SITES_LAYER, null)
     map.fitBounds(MAP_BOUNDS)
@@ -75,3 +79,16 @@ campaigns.on("click", ({currentTarget}) => {
     map.fitBounds(campaign.bbox)
   }
 })
+
+const menu_arrow = $('.arrow-icon');
+const close_icon = $('.close-icon');
+const campaign_btn = $('.campaign');
+
+menu_arrow.on("click", () => {
+  $('.timeline-wrapper').toggleClass('open-menu');
+  $('.icon-img').toggleClass('rotate-icon');
+});
+
+close_icon.on("click", () => {
+  $('.infobox-container').addClass('close-infobox');
+});
