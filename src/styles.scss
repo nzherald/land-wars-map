@@ -242,6 +242,9 @@
   .campaign p {
     width: 80px;
     margin: -2px 0 0 18px;
+    &.selected {
+      color: red;
+    }
   }
 
   .campaign-description {

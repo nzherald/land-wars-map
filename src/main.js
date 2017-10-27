@@ -75,9 +75,11 @@ campaigns.on("click", ({currentTarget}) => {
   if (filter && filter[2] == campaignId) {
     map.setFilter(SITES_LAYER, null)
     map.fitBounds(MAP_BOUNDS)
+    $(currentTarget).addClass('selected');
   } else {
     map.setFilter(SITES_LAYER, ['==', 'campaign', campaignId])
     map.fitBounds(campaign.bbox)
+    $(currentTarget).removeClass('selected');
   }
 })
 
