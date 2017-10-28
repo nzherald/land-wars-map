@@ -5,9 +5,9 @@
     latitude: -35.2623103
     longitude: 174.1223544
     text: >
-      As a diversion, warriors 
+      Warriors 
       attacked Kororāreka to enable Hōne Heke to cut down the flag pole for the fourth time. During the fighting the magazine caught fire
-      and a much of the town was evacuated.
+      and much of the town was evacuated.
 
       - [View of Kororāreka drawn 10 March 1845](https://nzhistory.govt.nz/media/photo/kororareka-painting-1845)
   - location: Ōtuihu
@@ -34,7 +34,7 @@
     latitude: -35.334297
     longitude: 174.223903
     text: >
-      British troops and Ngāpuhi allies attacked Te Kapotai pā in response to their
+      British troops and Ngāpuhi allies attacked Te Kapotai pā in response to Te Kapotai 
       involvement in the Kororāreka attack. Te Kapotai withdrew and the pā was plundered
       and burnt.
 
@@ -66,7 +66,7 @@
     longitude: 174.143225
     text: >
       The final battle of the Northern war began with several days of bombardment by the British after which
-      the British captured the pā with few remaining warriors inside.
+      the British captured the pā.
       Te Ruki Kawiti withdrew, and after brief fighting in the bush, abandoned the pā.
 
       - [Visitor guide for Ruapekapeka](http://www.ruapekapeka.co.nz)
@@ -125,7 +125,7 @@
     longitude: 175.053892 
     text: >
       700 Ngāti Hāua-te-rangi (upriver) warriors under the command of Te Mamaku attacked
-      Whanganui. Settlers and troops took refuge in Rutland stockade.
+      Whanganui. Settlers and troops took refuge in Rutland stockade, and a siege commenced.
 
       - [Rutland Stockade sketch](https://teara.govt.nz/en/artwork/36907/rutland-stockade-whanganui)
 
@@ -158,7 +158,7 @@
     text: >
       The battle of Waireka was a confused operation involving troops,
       militia, and sailors from HMS Niger attempting to rescue trapped settlers. The number of Māori fatalities is disputed.
-      New Zealand&apos; first Victoria Cross was awarded. 
+      New Zealand&apos;s first Victoria Cross was awarded. 
 
       - [Sketch of battle of Waireka](https://nzhistory.govt.nz/media/photo/sketch-battle-waireka)
 
@@ -177,14 +177,14 @@
     text: >
       Ōrongomaihāngi pā was shelled as part of a series of operations south of New Plymouth
       designed to prevent supporters of Te Ātiawa arriving from the south. The pā was abandoned
-      after a days&apos; shelling.
+      after a day&apos;s shelling.
 
   - location: Māhoetahi
     date: 6 Nov 1860
     latitude: -39.020784
     longitude: 174.194155
     text: >
-      A force of about 150 Ngati Maniapoto & Ngāti Hauā warriors from Waikato were fortifying an old pā site
+      A force of about 150 Ngati Maniapoto and Ngāti Hauā warriors from Waikato were fortifying an old pā site
       when they were surprised by 1000 newly arrived British soldiers who coincidentally
       planned to occupy the same site. The Māori force was quickly defeated.
 
@@ -222,20 +222,20 @@
       870 troops led by a new British commander defeated a small Māori force
       in a pā above the Katikara River.
 
-  - location: Allen&apos;s Hill
+  - location: "Allen's Hill"
     date: 2 October 1863
     latitude: -39.096372
     longitude: 174.012316
     text: >
       A skirmish resulted in two soldiers being awarded Victoria Crosses and
-      a Portuguese-born settler awarded the New Zealand Cross.
+      a Portuguese-born settler being awarded the New Zealand Cross.
 
   - location: Te Ahuahu
     date: 6 April 1864
     latitude: -39.152561
     longitude: 173.921385
     text: >
-      After being driven out of the area by troops and militia in March 1864 followers
+      After being driven out of the area by troops and militia in March 1864, followers
       of the Pai Mārire ambushed a British patrol. This action was used to attract more
       followers.
 
@@ -248,7 +248,7 @@
     longitude: 175.071892
     text: >
       Expecting an invasion, a force of about 1000 Māori assembled at Meremere. On
-      31 October 1863 the British used ships to transport troops past Meremere and the
+      31 October 1863 the British used ships to transport troops past Meremere, and the
       outflanked defenders abandoned the pā.
         
       - [Meremere from Whangamarino Redoubt](https://nzhistory.govt.nz/media/photo/mere-mere-whangamarino-redoubt)
@@ -299,7 +299,7 @@
       opportunity to surrender. They refused. In a surprise move the defenders broke through
       the cordon. In the ensuring pursuit many Māori were killed including wounded women.
 
-      - ['Ōrākau pā'](https://nzhistory.govt.nz/media/photo/orakau-pah)
+      - [Ōrākau pā](https://nzhistory.govt.nz/media/photo/orakau-pah)
 
 - campaign: tauranga
   sites:
@@ -312,7 +312,7 @@
       Ngāti Te Rangi. On April 28, supported by British troops, Arawa warriors pushed the
       Ngāti Porou force back and prevented them moving west.
 
-  - location: Pukehinahina (Gate Pā)
+  - location: Pukehinahina
     date: 29 April 1848
     latitude: -37.716091
     longitude: 176.138677
@@ -364,7 +364,7 @@
     latitude: -39.485155
     longitude: 174.183576
     text: >
-      In retaliation for the attack on Turuturumōkai government forces attacked
+      In retaliation for the attack on Turuturumōkai, government forces attacked
       Tītokowaru&apos;s pā, Te Ngutu o te Manu. The result was inconclusive.
 
   - location: Moturoa
@@ -372,7 +372,7 @@
     latitude: -39.716627
     longitude: 174.652192
     text: >
-      Tītokowaru established a new position at Motorua and successfully enticed an attack.
+      Tītokowaru established a new position at Motorua and successfully provoked an attack.
       Motorua appeared half-built, but was actually complete. Government forces were defeated.
 
       - [Moturoa battle plan](https://nzhistory.govt.nz/media/photo/moturoa-battle-plan)
@@ -383,7 +383,7 @@
     latitude: -39.812943
     longitude: 174.794216
     text: >
-      Tītokowaru constructed massive earthworks at Taurangaika pā. However when the
+      Tītokowaru constructed massive earthworks at Taurangaika pā. However, when the
       pā was attacked it was found to have been abandoned, effectively ending Tītokowaru&apos;s
       war.
       

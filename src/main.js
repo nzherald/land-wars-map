@@ -13,12 +13,12 @@ app.innerHTML = mapDiv + timeline
 var infobox = document.getElementById('info-box');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibnpoZXJhbGQiLCJhIjoiSVBPNHM0cyJ9.PDW_j3xU8w-wTnKCpnshPg';
-const SITES_LAYER = 'new-zealand-wars-sites-v12'
+const SITES_LAYER = 'new-zealand-wars-sites-v13'
 const MAP_BOUNDS = [[170, -44], [180, -31.0]]
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/nzherald/cj9adq57105si2sp4rom0y30z',
+  style: 'mapbox://styles/nzherald/cj9akagre3glk2so6l3r4opjy',
   maxBounds: [[167.3, -41.8],[183.8, -34]],
   center: [176.386231, -38.106439],
   zoom: 5,
