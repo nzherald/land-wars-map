@@ -12,7 +12,7 @@ function EmbedPlugin() {
 EmbedPlugin.prototype.apply = function(compiler) {
   compiler.plugin('done', function(stats)
     {
-      const embed = `$.getScript("//s3.newsapps.nz/new-zealand-wars/app.${stats.hash}.js");`
+      const embed = `$.getScript("//insights.nzherald.co.nz/apps/new-zealand-wars/app.${stats.hash}.js");`
       fs.writeFileSync('./dist/new-zealand-wars/embed.js', embed)
     })
 };
